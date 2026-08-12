@@ -216,7 +216,7 @@ body{
     border-radius: 45px;
     padding: 20px;
     padding-bottom: 5px;
-    background-image: url(Images/contact\ hover.gif);
+    background-image: url(Images/Contacthover.gif);
     background-size: cover;
     text-shadow: 2px 2px 20px black;
     background-repeat: no-repeat;
@@ -225,7 +225,7 @@ body{
 
 .contactButton:hover{
     background-size: cover;
-    background-image: url(Images/contact%20hover.gif);
+    background-image: url(Images/Contacthover.gif);
     background-repeat: no-repeat;
     color: #fff8bf;
     border-color: #fff8bf;  
