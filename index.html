@@ -1,0 +1,1638 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesformain.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css">
+        <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon">
+        <title>Home | Ian's Sweet Pen</title>
+    </head>
+
+     <section>
+        <div id="preloader">
+            <div style="display: flex; flex-direction: row;">
+                <img src="Images/Logo.png" alt="logo of Ian's Sweet Pen" class="preloadlogo">
+                <div class="textLogos">
+                    <h1 class="textHeaderLogo preloadertexts">Ian's Sweet Pen</h1>
+                    <h4 class="textSubheaderLogo preloadertexts">Gian's Art & Literary Website</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <header class="header">
+    <div class="divHeaderLogos">
+        <a href="index.html"><img src="Images/Logo.png" alt="Ian's Sweet Pen round logo" class="headerLogo"></a>
+        <div class="textLogos">
+            <a href="index.html"><h1 class="textHeaderLogo">Ian's Sweet Pen</h1></a>
+            <a href="index.html"><h4 class="textSubheaderLogo">Gian's Art & Literary Website</h4></a>
+        </div>
+
+        <a href="contact.html"><h5 class="contactButton">Contact</h5></a>
+        <img src="Images/menuicon.png" alt="menu icon" class="menuIcon" onclick="showSideBar()">
+        <img src="Images/close icon.png" alt="close icon" class="closeIcon" onclick="closeSideBar()">
+    </div>
+    </header>
+
+
+<body>
+    <div class="searchEngine">
+        <form onsubmit="submitEvent(event)">
+        <div class="search-alignment">
+            <button type="submit" class="searchButton"><img src="Images/Search icon.png" alt="submit button icon"></button>
+            <input type="search" name="search" class="searchInput" placeholder="Search anything..." oninput="filterItems()" autocomplete="off">
+        </div>
+        <ul class="resultsContainer">
+            <a href="index.html"><li class="result-item">Home</li></a>
+            <a href="about.html"><li class="result-item">About</li></a>
+            <a href="achievements.html"><li class="result-item">Achievements</li></a>
+            <a href="profile.html"><li class="result-item">Author's profile</li></a>
+            <a href="contact.html"><li class="result-item">Contact</li></a>
+            <a href="#row1"><li class="result-item">Proditiophobia</li></a>
+            <a href="#row2"><li class="result-item">Sister, Me too</li></a>
+            <a href="#row3"><li class="result-item">Lotus Flower</li></a>
+            <a href="#row4"><li class="result-item">Beleaguered in Love</li></a>
+            <a href="#row5"><li class="result-item">One Million Stars: One Million Kilometers to Connect Us</li></a>
+            <a href="#row6"><li class="result-item">When the Arduous Life Tries to Kill You</li></a>
+            <a href="#row7"><li class="result-item">Twenty Years</li></a>
+            <a href="#row8"><li class="result-item">They Will</li></a>
+            <a href="#row9"><li class="result-item">The Unorthodox Barbie</li></a>
+            <a href="#row10"><li class="result-item">Dear Human,</li></a>
+           <a href="#row11"> <li class="result-item">Dear little Gian,</li></a>
+            <a href="#rowart"><li class="result-item">Art Gallery</li></a>
+        </ul>
+        </form>
+    </div>
+
+    
+    <nav class="navbarlarge">
+        <div class="horizontalmenu">
+        <ul>
+            <li class="currentmenu">Home</li>
+            <li class="menu"><a href="about.html">About</a></li>
+            <li class="menu"><a href="achievements.html">Achievements</a></li>
+            <li class="menu"><a href="profile.html">Author's profile</a></li>
+        </ul>
+	    </div>
+        <div class="parent-Img">
+           <img src="Images/welcomebannerupdated.jpg" class="welcomebanner" alt="Ian's sweet pen welcome banner" id="myImage">
+            <div class="child-Nav">
+                <h4 class="scrollDown">-Scroll down to view my literary works-</h4>
+            </div> 
+        </div>      
+    </nav>
+
+    <ul class="mobileMenuContainer">
+        <!-- don't forget to make this functional :>>>> -->
+        <li class="currentmobilemenu">Home</li>
+        <a href="about.html" style="text-decoration: none;"><li class="mobileMenu">About</li></a>
+        <a href="achievements.html" style="text-decoration: none;"><li class="mobileMenu">Achievements</li></a>
+        <a href="profile.html" style="text-decoration: none;"><li class="mobileMenu">Author's profile</li></a>
+        <a href="contact.html" style="text-decoration: none;"><li class="mobileMenu">Contact</li></a>
+        <div class="searchEngineMobile">
+        <form onsubmit="submitMobileEvent(event)">
+        <div class="search-alignment">
+            <button type="submit" class="searchButton"><img src="Images/Search icon.png" alt="submit button icon"></button>
+            <input type="search" name="search" class="searchInput" id="searchInputMobile" placeholder="Search anything..." oninput="filterItemsMobile()" autocomplete="off">
+        </div>
+        <ul class="resultsContainer" id="resultsContainerMobile">
+            <a href="index.html"><li class="result-itemMobile">Home</li></a>
+            <a href="about.html"><li class="result-itemMobile">About</li></a>
+            <a href="achievements.html"><li class="result-itemMobile">Achievements</li></a>
+            <a href="profile.html"><li class="result-itemMobile">Author's profile</li></a>
+            <a href="contact.html"><li class="result-itemMobile">Contact</li></a>
+            <a href="#row1"><li class="result-itemMobile">Proditiophobia</li></a>
+            <a href="#row2"><li class="result-itemMobile">Sister, Me too</li></a>
+            <a href="#row3"><li class="result-itemMobile">Lotus Flower</li></a>
+            <a href="#row4"><li class="result-itemMobile">Beleaguered in Love</li></a>
+            <a href="#row5"><li class="result-itemMobile">One Million Stars: One Million Kilometers to Connect Us</li></a>
+            <a href="#row6"><li class="result-itemMobile">When the Arduous Life Tries to Kill You</li></a>
+            <a href="#row7"><li class="result-itemMobile">Twenty Years</li></a>
+            <a href="#row8"><li class="result-itemMobile">They Will</li></a>
+            <a href="#row9"><li class="result-itemMobile">The Unorthodox Barbie</li></a>
+            <a href="#row10"><li class="result-itemMobile">Dear Human,</li></a>
+           <a href="#row11"> <li class="result-itemMobile">Dear little Gian,</li></a>
+            <a href="#rowart"><li class="result-itemMobile">Art Gallery</li></a>
+        </ul>
+        </form>
+    </ul>
+
+    <div class="container-fluid">
+        <div class="row" id="row1">
+            <div class="col-lg-6 firstRowLeft">
+                <img src="Images/Picturemask.jpeg" alt="girl wearing a mask" class="pictureLeft">
+                
+            </div>
+            <div class="col-lg-6 secondRowLeft">
+                <div class="titleDiv">
+                    <img src="Images/VoiceInterface.png" alt="voice Translator" id="voiceBtn1" class="VoiceInterface" onclick="playAudio('audioProditiophobia','voiceBtn1')">
+                    <audio id="audioProditiophobia" src="sounds/proditiophobia.mp3"></audio>
+                    <h3 class="poemTitle" style="margin-top: 3rem;">Proditiophobia</h3>
+                    <div class="lineDesign">
+                        <img src="Images/Y2Kline.png" alt="line star" class="y2kLine">
+                    </div>
+                </div>
+                <p class="poem">
+                    The sun kindled way too light <br>
+                    Golden rays felt too hot <br>
+                    Maybe it was your hands <br>
+                    Or your presence <br>
+                    But no fool would deny <br>  
+                    That something warm <br>
+                    Was moving too fast <br>
+                    Yet too slow <br>
+                    <br>
+                    <span class="masktext">We would fight every Fridays</span></p>
+                </p>
+
+                <div class="readMoreButtons">
+                    <button class="readMore" onclick="showPoemCard('poem1')">Read more</button>
+                    <button class="authorsNote" onclick="showPoemCard('authorNote1')">Author's note</button>
+                </div> 
+            </div>
+        </div>
+        <div class="row" id="row2">
+             <div class="col-lg-6 order-2 order-lg-1 secondRowLeft" style="position: relative;padding: 0;">
+                <img src="Images/WAVE LINES.png" alt="wave line" class="wavelines">
+                <div class="titleDiv">
+                    <img src="Images/VoiceInterface.png" alt="voice Translator" id="voiceBtn2" class="VoiceInterface" style="margin-top: 0.5rem;" onclick="playAudio('audioSisterMeToo','voiceBtn2')">
+                    <audio id="audioSisterMeToo" src="sounds/sistermetoo.mp3"></audio> 
+                    <h3 class="poemTitle" style="margin-top: 1.5rem;">Sister, Me too</h3>
+                    <br>
+                </div>
+                <br>
+                <p class="poem" style="margin-left: 2.5rem;">
+                    Lustful smell spattered on innocence’s air. <br>
+                    His perfume howling with ecstatic caveat rose. <br>
+                    My nostril ensnared as it falter its gates of dove. <br>
+                    His mouth of malevolent silky teeth, <br>
+                    Deceiving my vacuous ears of beguile lure. <br>
+                    Strokes of jolliness on my lips <br>
+                    Amidst his promise of a room, amassed in ice <br>
+                    <span class="masktext">cream cones.</span>
+                </p>
+                <br>
+                <div class="readMoreButtons">
+                    <button class="readMore" onclick="showPoemCard('poem2')">Read more</button>
+                    <button class="authorsNote" onclick="showPoemCard('authorNote2')">Author's note</button>
+                </div> 
+
+
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2 firstRowLeft">
+                <img src="Images/teddybear.jpg" alt="Teddy bear tied" class="pictureLeft">
+            </div>
+
+        </div>
+        <div class="row" id="row3">
+            <div class="col-lg-6 firstRowLeft">
+                <img src="Images/lotusflower.jpg" alt="lotus flower" class="pictureLeft">
+                
+            </div>
+            <div class="col-lg-6 secondRowLeft" style="position: relative; padding: 0;">
+                <img src="Images/Square boxes.png" alt="square boxes" class="squarebox">
+                <div class="titleDiv" >
+                    
+                    <img src="Images/VoiceInterface.png" alt="voice Translator" id="voiceBtn3" class="VoiceInterface" style="margin-top: 0.5rem;" onclick="playAudio('audioLotus','voiceBtn3')">
+                    <audio id="audioLotus" src="sounds/lotus.mp3"></audio> 
+                    <h3 class="poemTitle" style="margin-top: 1.5rem;">Lotus Flower</h3>
+                </div>
+                <p class="poem" style="margin-left: 2.5rem;">
+                    I am a lotus flower <br>
+                    Like sun. Like light. <br>
+                    I blossom the silkiest pink <br>
+                    in a medley of verdant greens <br>
+                    Like thunder. Like wound. <br>
+                    I am nothing but an adversity <br>
+                    sown through roaring waters <br>
+                    and angry breeze <br>
+                    sometimes storms tries to wash me down, <br>
+                    <span class="masktext">sometimes floods tries to drown me up,</span>
+                </p>
+
+                <div class="readMoreButtons">
+                    <button class="readMore" onclick="showPoemCard('poem3')">Read more</button>
+                    <button class="authorsNote" onclick="showPoemCard('authorNote3')">Author's note</button>
+                </div> 
+            </div>
+        </div>
+        <div class="row" id="row4">
+             <div class="col-lg-6 order-2 order-lg-1 secondRowLeft" style="position: relative;padding: 0;">
+                <img src="Images/heartheart.png" alt="scribble"  style="width: 100%;">
+                <div class="titleDiv">
+                    <img src="Images/VoiceInterface.png" alt="voice Translator" id="voiceBtn4" class="VoiceInterface" style="margin-top: 0.5rem;" onclick="playAudio('audiobeleaguered','voiceBtn4')">
+                    <audio id="audiobeleaguered" src="sounds/beleagueredinlove.mp3"></audio>  
+                    <h3 class="poemTitle" style="margin-top: 1.5rem;">Beleaguered in Love </h3>
+                    <br>
+                </div>
+                <br>
+                <p class="poem" style="margin-left: 2.5rem;">
+                    Imbued in subtle growth, nuanced below my throat, <br>
+                    There it resides within my heart, <br>
+                    Benignly pounding all the veins that were sown, <br>
+                    I'm harbored with a mind swirling in crimson hues, <br>
+                    While I glimpse you in the corner of your shadow. <br>
+                    <br>
+                    I would fondly trap you <br>
+                    In the vast expanse of the void, <br>
+                    Somewhere far; <br>
+                    <span class="masktext">Somewhere distant, </span>
+                </p>
+                <div class="readMoreButtons">
+                    <button class="readMore" onclick="showPoemCard('poem4')">Read more</button>
+                    <button class="authorsNote" onclick="showPoemCard('authorNote4')">Author's note</button>
+                </div> 
+
+
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2 firstRowLeft">
+                <img src="Images/catHeart.jpg" alt="cat clinging on a heart hand" class="pictureLeft">
+            </div>
+
+        </div>
+        <div class="row" id="row5">
+            <div class="col-lg-6 firstRowLeft">
+                <img src="Images/starrynight.jpg" alt="night view with stars" class="pictureLeft">
+                
+            </div>
+            <div class="col-lg-6 secondRowLeft" style="position: relative; padding: 0;">
+                <img src="Images/starscribble.png" alt="scribble stars" class="scribblestar">
+                <div class="titleDiv" >
+                    
+                    <img src="Images/VoiceInterface.png" alt="voice Translator" id="voiceBtn5" class="VoiceInterface" style="margin-top: 0.5rem;" onclick="playAudio('audioOneMil','voiceBtn5')">
+                     <audio id="audioOneMil" src="sounds/onemillionstars.mp3"></audio> 
+                    <h3 class="poemTitle" style="margin-top: 1.5rem;font-size: 2.5rem;">One Million Stars: One Million Kilometers to Connect Us</h3>
+                </div>
+                <br>
+                <p class="poem" style="margin-left: 2.5rem;">
+                    Beside a shabby, colossal rock, <br>
+                    My eyes follow his, inadvertently  <br>
+                    Tilting our heads, we see <br>
+                    The outstretched world,<br>
+                    Where the dark aurora skies are encrusted with luminescent stars  <br>
+                    “Those are the dead souls watching us.” <br>
+                    <br>
+                    I tear my befuddled stare against the fondly skies <br>
+                    And heave them eyes towards his gleaming soul, <br>
+                    <span class="masktext">Looking at me with bittersweet smiles</span>
+                </p>
+
+                <div class="readMoreButtons">
+                    <button class="readMore" onclick="showPoemCard('poem5')">Read more</button>
+                    <button class="authorsNote" onclick="showPoemCard('authorNote5')">Author's note</button>
+                </div> 
+            </div>
+        </div>
+        
+        <div class="row" id="row6">
+             <div class="col-lg-6 order-2 order-lg-1 secondRowLeft" style="position: relative;padding: 0;">
+                <img src="Images/spiderwebs.png" alt="scribble" class="spiderweb">
+                <div class="titleDiv">
+                    <img src="Images/VoiceInterface.png" alt="voice Translator" id="voiceBtn6" class="VoiceInterface" style="margin-top: 0.5rem;" onclick="playAudio('audiowhenlifeisarduous','voiceBtn6')">
+                    <audio id="audiowhenlifeisarduous" src="sounds/whenlifearduous.mp3"></audio>   
+                    <h3 class="poemTitle" style="margin-top: 1.5rem; font-size: 2.5rem;">When the Arduous Life Tries to Kill You </h3>
+                    <br>
+                </div>
+                <br>
+                <p class="poem" style="margin-left: 2.5rem;">
+                    When sonorous laughter haunts you down, <br>
+                    Boost all the mellow in your ears <br>
+                    When internal angst thorns you down,  <br>
+                    Don’t let its aftermath shatter you anew <br>
+                    When drastic pressure conquers all in you, <br>
+                    Let your tears flow and ease you <br>
+                    When embarrassment dims in you, <br>
+                    Don’t let it unnerve you all the way through <br>
+                    <span class="masktext">When grief bores something within you, </span>
+                </p>
+                <div class="readMoreButtons">
+                    <button class="readMore" onclick="showPoemCard('poem6')">Read more</button>
+                    <button class="authorsNote" onclick="showPoemCard('authorNote6')">Author's note</button>
+                </div> 
+
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2 firstRowLeft">
+                <img src="Images/ghost.jpg" alt="ghost with dark hands" class="pictureLeft">
+            </div>
+        </div>
+        <div class="row" id="row7">
+            <div class="col-lg-6 firstRowLeft">
+                <img src="Images/rainbow.jpg" alt="rainbow on a field" class="pictureLeft">
+                
+            </div>
+            <div class="col-lg-6 secondRowLeft" style="position: relative; padding: 0;">
+                <img src="Images/gaybracelet.png" alt="rainbow braicelets" class="braicelets">
+                <div class="titleDiv" >
+                    
+                    <img src="Images/VoiceInterface.png" alt="voice Translator" id="voiceBtn7" class="VoiceInterface" style="margin-top: 0.5rem;" onclick="playAudio('audioTwenty','voiceBtn7')">
+                    <audio id="audioTwenty" src="sounds/twentyyears.mp3"></audio>  
+                    <h3 class="poemTitle" style="margin-top: 1.5rem;">Twenty Years</h3>
+                </div>
+                <p class="poem" style="margin-left: 2.5rem;">
+                    Twenty years from now, <br>
+                    I shall search for the clouds of voices. <br>
+                    Voices that were densely thundering and deafening, <br>
+                    But never vague and nuanced. <br>
+                    <br>
+                    I shall become one with the voices of the throngs. <br>
+                    Filled with sounds from a proud community, <br>
+                    A community in which I belong. <br>
+                    <span class="masktext">I must’ve been with them in their blobs. </span>
+                </p>
+
+                <div class="readMoreButtons">
+                    <button class="readMore" onclick="showPoemCard('poem7')">Read more</button>
+                    <button class="authorsNote" onclick="showPoemCard('authorNote7')">Author's note</button>
+                </div> 
+            </div>
+        </div>
+        <div class="row" id="row8">
+             <div class="col-lg-6 order-2 order-lg-1 secondRowLeft" style="position: relative;padding: 0;">
+                <img src="Images/chain.png" alt="chains" class="chains">
+                <div class="titleDiv">
+                    <img src="Images/VoiceInterface.png" alt="voice Translator" id="voiceBtn8" class="VoiceInterface" style="margin-top: 0.5rem;" onclick="playAudio('audiotheywil','voiceBtn8')">
+                    <audio id="audiotheywil" src="sounds/theywill.mp3"></audio>   
+                    <h3 class="poemTitle" style="margin-top: 1.5rem;">They Will</h3>
+                    <br>
+                </div>
+                <br>
+                <p class="poem" style="margin-left: 2.5rem;">
+                    I had always lingered at the penumbra, <br>
+                    Staying in the shadows of darkness <br>
+                    Like a rat that hides in the bushes. <br>
+                    I had always kept this one thing so anonymous. <br>
+                    And only I knew about it. <br>
+                    Until they sensed my action. <br>
+                    Until they find themselves on a mission: <br>
+                    A pursuit to know this abstract subtleness. <br>
+                    And the last thing that I'd do is realize <br>
+                    <span class="masktext">That it might be over.</span>
+                </p>
+                <div class="readMoreButtons">
+                    <button class="readMore" onclick="showPoemCard('poem8')">Read more</button>
+                    <button class="authorsNote" onclick="showPoemCard('authorNote8')">Author's note</button>
+                </div> 
+
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2 firstRowLeft">
+                <img src="Images/despair.jpg" alt="girl shadow in despair" class="pictureLeft">
+            </div>
+        </div>
+        <div class="row" id="row9">
+            <div class="col-lg-6 firstRowLeft">
+                <img src="Images/barbie.jpg" alt="barbie tools" class="pictureLeft">
+                
+            </div>
+            <div class="col-lg-6 secondRowLeft" style="position: relative; padding: 0;">
+                <img src="Images/barbiesigns.png" alt="tools of barbie" class="barbie">
+                <div class="titleDiv" >
+                    
+                    <img src="Images/VoiceInterface.png" alt="voice Translator" id="voiceBtn9" class="VoiceInterface" style="margin-top: 1.5rem;" onclick="playAudio('audiobarbs','voiceBtn9')">
+                     <audio id="audiobarbs" src="sounds/barbie.mp3"></audio>   
+                    <h3 class="poemTitle" style="margin-top: 2rem; font-size: 2.5rem;">The Unorthodox Barbie</h3>
+                </div>
+                <br>
+                <p class="poem" style="margin-left: 3rem;">
+                    Barbie. <br>
+                    Her name's so enticing; <br>
+                    Perfect to whom <br>
+                    That has majestic beauty. <br>
+                    A name given and entrenched <br>
+                    To a woman that's so blessed <br>
+                    But bespangled upon <br>
+                    A lingering misery. <br>
+                    <span class="masktext">Beyond bitter it seems</span>
+                </p>
+
+                <div class="readMoreButtons">
+                    <button class="readMore" onclick="showPoemCard('poem9')">Read more</button>
+                    <button class="authorsNote" onclick="showPoemCard('authorNote9')">Author's note</button>
+                </div> 
+            </div>
+        </div>
+        <div class="row" id="row10">
+             <div class="col-lg-6 order-2 order-lg-1 secondRowLeft" style="position: relative;padding: 0;">
+                <img src="Images/scribble.png" alt="scribble" class="chains">
+                <div class="titleDiv">
+                    <img src="Images/VoiceInterface.png" alt="voice Translator" id="voiceBtn10" class="VoiceInterface" style="margin-top: 2rem;" onclick="playAudio('audiodear','voiceBtn10')">
+                    <audio id="audiodear" src="sounds/dearhuman.mp3"></audio>    
+                    <h3 class="poemTitle" style="margin-top: 3rem;">Dear Human,</h3>
+                    <br>
+                </div>
+                <br>
+                <p class="poem" style="margin-left: 2.5rem;">
+                    What if I confessed to be <br>
+                    More flawed and wretched than a serial killer?<br>
+                    Would you laugh? <br>
+                    Would you ridicule?<br>
+                    Would you fear me? <br>
+                    Or perhaps…….believe in me? <br>
+                    <br>
+                    If I were to share that I am gay,<br>
+                    <span class="masktext">What emotions would you display?</span>
+                </p>
+                <div class="readMoreButtons">
+                    <button class="readMore" onclick="showPoemCard('poem10')">Read more</button>
+                    <button class="authorsNote" onclick="showPoemCard('authorNote10')">Author's note</button>
+                </div> 
+
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2 firstRowLeft">
+                <img src="Images/chairindark.jpg" alt="girl shadow in despair" class="pictureLeft">
+            </div>
+        </div>
+        <div class="row" id="row11">
+            <div class="col-lg-6 firstRowLeft">
+                <img src="Images/gian.jpg" alt="picture of author when he was a kid" class="pictureLeft">
+                
+            </div>
+            <div class="col-lg-6 secondRowLeft" style="position: relative; padding: 0;">
+                <img src="Images/y2kstars.png" alt="stars in y2k" style="width: 100%; height: 9rem;">
+                <div class="titleDiv" >
+                    
+                    <img src="Images/VoiceInterface.png" alt="voice Translator" id="voiceBtn11" class="VoiceInterface" style="margin-top: 0.5rem;" onclick="playAudio('audiolittlegian','voiceBtn11')">
+                    <audio id="audiolittlegian" src="sounds/gian.mp3"></audio>  
+                    <h3 class="poemTitle" style="margin-top: 1.5rem;">Dear little Gian,</h3>
+                </div>
+                <p class="poem" style="margin-left: 2.5rem;">
+                    One thing I hate about you <br>
+                    Is just how easy it is to doubt yourself <br>
+                    And feel like things never truly go the right way <br>
+                    Sometimes it feels too monotonous <br>
+                    To think about how every aspect of you<br>
+                    Seems lacking or simply put, “Never enough,” <br>
+                    Yet you’ve worked so hard and even persevered<br>
+                    To venture your way out of your norm world<br>
+                    <span class="masktext">There were so many quandaries... </span><br>
+                </p>
+
+                <div class="readMoreButtons">
+                    <button class="readMore" onclick="showPoemCard('poem11')">Read more</button>
+                    <button class="authorsNote" onclick="showPoemCard('authorNote11')">Author's note</button>
+                </div> 
+            </div>
+        </div>
+    </div>
+    </div>    
+
+    <div class="container-fluid">
+        <div class="row mycarousel" id="rowart">
+            <div class="titleart">
+                <img src="Images/starsartgallleft.png" alt="" class="starsgalleryleft"> 
+               <h2 class="artgallerytitle">ART GALLERY</h2>
+                <img src="Images/starsartgall.png" alt="" class="starsgalleryright">
+                
+            </div>            
+
+
+            <div class="carousel-wrapper">
+            <div class="containerImgForSides1">
+                <img src="Images/balaoc.png" alt="" class="leftImages leftActive">
+                <img src="Images/artGian1.jpg" class="leftImages">
+                <img src="Images/trees.png" alt="" class="leftImages">
+                
+            </div>
+
+            <div class="slides">
+                <div class="slide-container">
+                    <img src="Images/artGian1.jpg" class="slide activePic">
+                    <img src="Images/trees.png" alt="" class="slide">
+                    <img src="Images/balaoc.png" alt="" class="slide">
+
+                    <button class="prev controllerbtn">&#10094;</button>
+                    <button class="next controllerbtn">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="containerImgForSides2">
+                <img src="Images/trees.png" alt="" class="rightImages rightActive">
+                <img src="Images/balaoc.png" alt="" class="rightImages">
+                <img src="Images/artGian1.jpg" class="rightImages">
+            </div>
+
+        </div>
+            
+        </div>
+    </div>
+
+    <div class="lightbox" id="poem1" >
+        <div class="card">
+            <p class="contentPoem">
+                <img src="Images/close.png" alt="close" class="closeButtonPoem" onclick="closePoemCard('poem1')">
+                <span class="titleOfContent">Proditiophobia</span><br>
+                <span class="authorOfContent">By Gian Delos Reyes</span>
+                <br>
+                <br>
+            The sun kindled way too light <br>
+            Golden rays felt too hot <br>
+            Maybe it was your hands <br>
+            Or your presence <br>
+            But no fool would deny <br>
+            That something warm <br>
+            Was moving too fast <br>
+            Yet too slow <br>
+            <br>
+            We would fight every Fridays <br>
+            Over a piece of butter cookie <br>
+            Play Sylvanian <br>
+            Until it was time for dinner <br>
+            We knocked random doors <br>
+            And ran as far as we could <br>
+            You drew our future mansion <br>
+            And I drew our future car <br>
+            You used to borrow anything <br> 
+            And never fail to break them  <br>
+            We’d laugh at our stupidity <br>
+            Share clothes after some endless excuses <br>
+            Do pillow fight at a random midnight <br>
+            Eat mangoes together <br>
+            After longing one for months <br>
+            We promised to stay <br>
+            <span style="margin-left: 7rem;">to love</span><br>
+            <span style="margin-left: 7rem;">to laugh</span><br>
+            <span style="margin-left: 7rem;">to live by the sense of friendship</span><br>
+            <span class="together">together…</span><br>
+            <br>
+            <span class="neverhappened">Yet it never happened</span><br>
+            <br>
+            I get to eat all the cookies all by myself<br>
+            Which is weird because <br>
+            Someone used to fight with me for the last piece<br>
+            Dinner was too early<br>
+            Because we haven’t played sylvanian yet<br>
+            Somebody was knocking at my doors<br>
+            But it wasn’t you anymore <br>
+            Our drawings always felt complete<br>
+            Until I realized we’ve forgot to draw ourselves <br>
+            My things stood perfectly fine<br>
+            Because there’s no one else who would borrow them  <br>
+            Crying at my stupidity doesn’t seem so well to me<br>
+            Because we used to laugh at them before<br>
+            My clothes smelled fresh today<br>
+            Which is odd because you didn’t say a word to me  <br>
+            Those pillows? No one used it anymore<br>
+            Which is crazy because we used to fight with them, remember? <br>
+            You said you liked mangoes<br>
+            Until I saw the yellow pills you took <br>
+            And the outburst dripping uncontrollably <br>
+            Under your lips…and your neck…<br>
+            And the crimson cuts around you that I cannot fathom<br>
+            Why didn’t you say you were longing for blades instead? <br>
+
+            <br>
+            When you promised that we’ll live by together forever<br>
+            Did you mean it in the other side of the world?<br>
+            Because I guess you didn’t mean it anyway<br>
+            Even so, I’m proud to say<br>
+            That we’ve lived together after all<br>
+            And that your warmth <br>
+            Has been smoldering fresh<br>
+            In your cold-tarnished tombstone<br>
+
+            <br>
+            Ian, <br>
+            I hope you didn’t forget your promise<br>
+
+            <br>
+            <br>
+            <br>
+            <span style="display: flex; justify-self: end;">Because that promise looked different, it seems.</span>  <br>
+            
+            </p>
+        </div>
+    </div>
+
+     <div class="lightbox" id="authorNote1" >
+        <div class="card authorCard">
+            <div class="contentPoem">
+                <img src="Images/close.png" alt="close" class="closeButtonPoem" onclick="closePoemCard('authorNote1')">
+                <h3 class="authorNoteTitle">Author's Note</h3>
+                <br>
+                <p class="authorNoteContent">
+                <b>Some promises don't break all at once—they simply become something else.</b> <br> 
+                <br>
+                This poem was written out of the quiet ache of remembering someone who was once an aspect into every ordinary part of life. <br>
+                It isn't only about losing a friend; it's about realizing that grief often hides inside the smallest things—a butter cookie, <br>
+                a game left untouched, a drawing that never got finished, or the sweetness of a mango shared too late. <br>
+                
+                While writing this, I wanted to capture how childhood memories can remain painfully warm even when the person tied <br>
+                to them is gone. We often remember laughter first, then absence, and only later do we begin to understand the battles <br>
+                that were silently being fought. Sometimes, the hardest question isn't why they left, but why they never felt <br>
+                they could tell us they were hurting. <br>
+
+                This poem is for every promise that was made with innocent hearts, <br>
+                for every friendship that deserved more time, and for every person who <br>
+                 still finds themselves speaking to someone who can no longer answer. <br></p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="lightbox" id="poem2" >
+        <div class="card">
+            <p class="contentPoem">
+                <img src="Images/close.png" alt="close" class="closeButtonPoem" onclick="closePoemCard('poem2')">
+                <span class="titleOfContent">Sister, Me too</span><br>
+                <span class="authorOfContent">By Gian Delos Reyes</span>
+                <br>
+                <br>
+                Lustful smell spattered on innocence’s air. <br>
+                His perfume howling with ecstatic caveat rose. <br>
+                My nostril ensnared as it falter its gates of dove. <br>
+                His mouth of malevolent silky teeth, <br>
+                Deceiving my vacuous ears of beguile lure. <br>
+                Strokes of jolliness on my lips <br>
+                Amidst his promise of a room, amassed in ice cream cones. <br>
+                <br>
+                He grabs my staunch arms to his vicious hands, juxtaposed, <br>
+                Dragging them like a leash <br>
+                Tied with tamed slavery mind. <br>
+                His hands of filthiness <br>
+                Gradually pushes the shabby lock in sinister touch. <br>
+                Silently uncanny and hushed. <br>
+                Oddly enough, nothing but my inner-kid’s enchantment roused <br>
+                In the flavored ice cream that slavered my youthful mouth. <br>
+                <br>
+                Vanilla, different somehow, the taste hints a subtle unknown. <br>
+                My clueless lips ponder the eccentric fluid taste. <br>
+                Something one could never know. <br>
+                His unsettling smirk vented malice through his lips, <br>
+                Watching me, digging deeper in twisted grips. <br>
+                <br>
+                He pulls my body onto his lap, <br>
+                Perplexed on the tender material, <br>
+                Vigorously rubbing underneath my jumper jeans. <br>
+                Distress escapes my lips, a cry of pain, <br>
+                As he anchors me against the embellished walls. <br>
+                <br>
+                My frail hands polarized by his arms layered in evil horns <br>
+                As if I was a strand of longganisa meat <br>
+                Hanged in the peddler’s market stall. <br>
+                <br>
+                His sweltering lip <br>
+                Savors all the purity bespangled under my body. <br>
+                Haunting my tarnished soul poured in the names of disgust and self-loathe. <br>
+                The threshold between my knees, battered, <br>
+                As if thorns of needles are stitching its sore flesh. <br>
+                My face of anguish, uninhibited, <br>
+                While teal ribbons rained in the furious gloomy skies.<br>
+                <br>
+                That day I remember<br>
+                Before the blindfolded gavel thrummed its prowess sound, <br>
+                And justice ebbs in the battleground.<br>
+                <br>
+                Ten years have passed,<br>
+                Down on the ground, <br>
+                An ice cream lingers in my sight.<br>
+                Snakes swirling on its circular shape<br>
+                Like Medusa's chandelier light.<br>
+                Matches ignite in my sulking hands, <br>
+                Throwing it hardly on the ice cream I despise.<br>
+                Barbaric flames crumbles it down <br>
+                As rivulets of tears coated my face. <br>
+                <br>
+                Phoenix and butterflies blossoms in the town,<br>
+                As I find the words I can hardly say,<br>
+                "Sister, me too." <br>
+
+            </p>
+        </div>
+    </div>
+
+    <div class="lightbox" id="authorNote2" >
+        <div class="card authorCard">
+            <div class="contentPoem">
+                <img src="Images/close.png" alt="close" class="closeButtonPoem" onclick="closePoemCard('authorNote2')">
+                <h3 class="authorNoteTitle">Author's Note</h3>
+                <br>
+                <p class="authorNoteContent">
+                    I wrote this poem because I wanted to give a voice to the kind of pain that people <br> 
+                    often hide for years. Some wounds aren't always visible, and sometimes they're buried <br>
+                    so deep that all that's left are memories attached to the smallest things. A scent, <br>
+                    a taste, or even an ice cream can become a reminder of something a child never <br>
+                    should have experienced. <br>
+                    <br>
+                    Sister, Me Too is about innocence being taken away, but it's also about finding <br>
+                    the courage to finally speak. The last line is the heart of this poem. To me, "me too" <br>
+                    isn't just a phrase—it means realizing you're not alone anymore. It means finding someone <br>
+                     who understands without needing every detail explained. <br>
+                    <br>
+                    I hope this poem reminds people to be kinder because we never really know what someone is carrying. <br>
+                     And for those who see themselves in these words, I hope you know that your story matters, your voice <br>
+                      deserves to be heard, and healing is possible, even if it takes time. <br>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="lightbox" id="poem3">
+        <div class="card">
+            <p class="contentPoem">
+                <img src="Images/close.png" alt="close" class="closeButtonPoem" onclick="closePoemCard('poem3')">
+                <span class="titleOfContent">Lotus Flower</span><br>
+                <span class="authorOfContent">By Gian Delos Reyes</span>
+                <br>
+                <br>
+                <span style="margin-left: 2rem;">I am a lotus flower</span><br>
+                <span style="margin-left: 3rem;">Like sun. Like light.</span> <br>
+                <span style="margin-left: 5rem;">I blossom the silkiest pink </span><br>
+                <span style="margin-left: 5rem;">in a medley of verdant greens </span><br>
+                <span style="margin-left: 2.5rem;">Like thunder. Like wound. </span><br>
+                I am nothing but an adversity <br>
+                <span style="margin-left: 0.5rem;">sown through roaring waters </span><br>
+               <span style="margin-left: 5rem;">and angry breeze </span><br>
+                <br>
+                <span style="margin-left: 2rem;">sometimes storms tries </span><span style="margin-left: 1.5rem;">to wash me down,</span>  <br>
+                <span style="margin-left: 1rem;">sometimes floods tries</span><span style="margin-left: 1.5rem;">to drown me up, </span><br>
+                <span style="margin-left: 2.5rem;">sometimes heat tries </span><span style="margin-left: 1rem;">to wilt my petals, </span> <br>
+                and sometimes the murky waters <br>
+                <span style="margin-left: 0.5rem;">tries to suck</span><span style="margin-left: 1rem;">all the purity all over my roots and body </span> <br>
+                <br>
+               <span style="margin-left: 2rem;">life tries to kill me, </span><br>
+                <span style="margin-left: 6rem;">but here I am,</span>  <br>
+                 <span style="margin-left: 7rem;">defying all that hinders me down </span><br>
+                 <span style="margin-left: 5rem;">standing steadfast with buttress roots </span><br>
+                 <span style="margin-left: 1rem;">and graceful petals nestled in pristine beauty</span> <br>
+                 <span style="margin-left: 1rem;">just when everyone thought I’m slowly dimming </span><br>
+                 <span style="margin-left: 2.5rem;">I eventually came out rekindling in an ember of idyllic pink </span><br>
+                 <span style="margin-left: 2rem;"></span>I am the cleanest flower <span style="margin-left: 1rem;">that a bee could have ever smell </span>  <br>
+                 <span style="margin-left: 4rem;">and even in the most dreadful nature known to be, </span><br>
+                I find querencia upon the seemingly arduous world <br>
+                <span style="margin-left: 1rem;">of machination in front of me. </span><br>
+              
+
+            </p>
+        </div>
+    </div>
+    <div class="lightbox" id="authorNote3" >
+        <div class="card authorCard">
+            <div class="contentPoem">
+                <img src="Images/close.png" alt="close" class="closeButtonPoem" onclick="closePoemCard('authorNote3')">
+                <h3 class="authorNoteTitle">Author's Note</h3>
+                <br>
+                <p class="authorNoteContent">
+                People often admire the beauty of a lotus without thinking about where it came from. <br>
+                They see the petals, but they forget the mud beneath them. <br>
+                    <br>
+                This poem is my reminder that growth has never been about having a perfect life. <br>
+                 It's about choosing to bloom even when the world keeps giving you reasons not to. <br>
+                  We all have storms that try to pull us under, voices that make us question our worth, <br>
+                   and days that make us feel like we're slowly fading. But just because life gets heavy <br>
+                   doesn't mean we're meant to stay buried. <br>
+                    <br>
+                The lotus became the heart of this poem because I see a part of myself in it. <br>
+                 No matter how murky the water gets, it still reaches for the light. <br>
+                  I think that's what resilience really looks like—not pretending <br>
+                  the pain never happened, but refusing to let it decide who we become. <br>
+                    <br>
+                If there's one thing I hope this poem leaves behind, it's this: <br>
+                your beginnings do not define your ending. <br>
+                Even after the darkest waters, you can still bloom.<br>
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <div class="lightbox" id="poem4" >
+        <div class="card">
+            <p class="contentPoem">
+                <img src="Images/close.png" alt="close" class="closeButtonPoem" onclick="closePoemCard('poem4')">
+                <span class="titleOfContent">Beleaguered in Love </span><br>
+                <span class="authorOfContent">By Gian Delos Reyes</span>
+                <br>
+                <br>
+                Imbued in subtle growth, nuanced below my throat, <br>
+                There it resides within my heart, <br>
+                Benignly pounding all the veins that were sown, <br>
+                I'm harbored with a mind swirling in crimson hues, <br>
+                While I glimpse you in the corner of your shadow. <br>
+                <br>
+                I would fondly trap you <br>
+                In the vast expanse of the void, <br>
+                Somewhere far; <br>
+                Somewhere distant, beyond where my vision can scope. <br>
+                Yet, it seems stubbornly inherent, <br>
+                As if your vanity is fated to be seen, <br>
+                And I find myself imprisoned within those eyes, <br>
+                My neck slaughtered by a thousand glances. <br>
+                I behold you like a siren, bewitched, <br>
+                My eyes anchored to the character I perceive, <br>
+                Entangled in every dimension where you’d be. <br>
+                <br>
+                But why do I fear the feeling you fostered? <br>
+                Why do I hate this tethered affinity for bridled love? <br>
+                I long to cradle your face bestowed by the celestial angels of heaven. <br>
+                I would dare to yell the majesty that you are. <br>
+                I would chase your hand amidst the thunderous rain, <br>
+                Protecting you like a saint of pain. <br>
+                I'm willing to bleed just so your voice stays <br>
+                Within the chambers of my ear. <br>
+                <br>
+                Yet, here I am…with a tear upon my face.<br>
+                <br>
+                Suddenly, I find myself beside my weathered clock, <br>
+                Desperately attempting to turn its hands back. <br>
+                Memories of the past invade my thoughts, <br>
+                Those doomed relationships begin to butcher <br>
+                The sanctuary of my mind. <br>
+                The stinging embrace of hushed loneliness, <br>
+                The dearth of bliss, <br>
+                And the tormenting ache gradually engulf me once more. <br>
+                The smile I plastered every Monday <br>
+                Turns into the tears that cascade every Friday. <br>
+                And as I hereby look at you once again, <br>
+                All I could think of are the smoldering scars, <br>
+                Leaving me petrified of loving anew, <br>
+                For I reside in a cosmos <br>
+                Where the painful past relentlessly follows me back.<br>
+
+
+            </p>
+        </div>
+    </div>
+    <div class="lightbox" id="authorNote4" >
+        <div class="card authorCard">
+            <div class="contentPoem">
+                <img src="Images/close.png" alt="close" class="closeButtonPoem" onclick="closePoemCard('authorNote4')">
+                <h3 class="authorNoteTitle">Author's Note</h3>
+                <br>
+                <p class="authorNoteContent">
+               "Beleaguered in Love is a poem that resonates with the yearning to love someone, <br>
+               yet those past, painful relationships await us back. The feeling of fear to love  <br>
+               someone while anticipating that they will come and go is painful, as it seems, <br>
+                and can traumatize you afterwards." <br>
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <div class="lightbox" id="poem5">
+        <div class="card">
+            <p class="contentPoem">
+                <img src="Images/close.png" alt="close" class="closeButtonPoem" onclick="closePoemCard('poem5')">
+                <span class="titleOfContent">One Million Stars: One Million Kilometers to Connect Us</span><br>
+                <span class="authorOfContent">By Gian Delos Reyes</span>
+                <br>
+                <br>
+                Beside a shabby, colossal rock, <br>
+                My eyes follow his, inadvertently  <br>
+                Tilting our heads, we see <br>
+                The outstretched world, <br>
+                Where the dark aurora skies are encrusted with luminescent stars  <br>
+                “Those are the dead souls watching us.” <br>
+                <br>
+                I tear my befuddled stare against the fondly skies <br>
+                And heave them eyes towards his gleaming soul, <br>
+                Looking at me with bittersweet smiles  <br>
+                And tears pouring all over his face <br>
+                As if…as if it will be the last time I’ll ever meet him,<br>
+                Ever again.<br>
+                <br>
+                A heavenly white tunnel calls for his presence<br>
+                As a powerful smell of death stained the blustery air <br>
+                I can feel that end is near,<br>
+                So I firmly held my hand around his,<br>
+                Unwilling to let go of him, <br>
+                But pieces of him came fading in gradually<br>
+                And then it broke our bounded hands <br>
+                <span style="margin-left: 8rem;">And then our promises</span> <br>
+                <span style="margin-left: 8rem;">And then our connections</span><br>
+                <br>
+                The desolated grief <br>
+                Bores my chest, mind, and soul,<br>
+                Knowing that a mystical being took a part of me<br>
+                That I cannot recoup<br>
+                <br>
+                It all took an ample time <br>
+                To fathom everything <br>
+                The man I hold dear <br>
+                Is no longer within my desperate reach <br>
+                And all that was left is a remnant of his smiles, <br>
+                Vividly smoldering in my mind<br>
+                <br>
+                So now that I am all alone on this rock, one moment ago, <br> 
+                I stared yet again in this plethora of stars bedecked in the skies, <br>
+                Knowing he is currently one of the million stars, <br>
+                Looking and brilliantly smiling at me <br>
+                For though I am uncertain of which star is he, <br>
+                He is at least one million kilometers above me<br>
+                And as I smile along with him, <br>
+                I mumbled something under my lips,<br>
+                I will miss you, Lolo<br>
+
+            </p>
+        </div>
+    </div>
+    <div class="lightbox" id="authorNote5" >
+        <div class="card authorCard">
+            <div class="contentPoem">
+                <img src="Images/close.png" alt="close" class="closeButtonPoem" onclick="closePoemCard('authorNote5')">
+                <h3 class="authorNoteTitle">Author's Note</h3>
+                <br>
+                <p class="authorNoteContent">
+               There are people we never really stop looking for, even after they're gone. <br>
+               Sometimes, we search for them in old photographs, familiar places, or in the quiet <br>
+               moments when the world finally slows down. For me, I like to think they're somewhere <br>
+                among the stars. <br>
+                    <br>
+            This poem was inspired by the kind of love that doesn't disappear with death. Losing someone <br>
+            we deeply cherish can make the world feel a little emptier, but the memories they leave behind<br>
+             somehow continue to light our way. Even though we can no longer hold their hands, hear their <br>
+             laughter, or see their smiles in person, their presence never truly leaves us.<br>
+                    <br>
+            One Million Stars: One Million Kilometers to Connect Us is my way of holding on to someone<br>
+             I can no longer reach. It's about believing that love can exist beyond distance, beyond time,<br>
+              and even beyond life itself. Every star became a reminder that the people we miss the most<br>
+               are never as far away as they seem—they live in our memories, in the lessons they taught us, <br>
+               and in the love they left behind. <br>
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <div class="lightbox" id="poem6" >
+        <div class="card">
+            <p class="contentPoem">
+                <img src="Images/close.png" alt="close" class="closeButtonPoem" onclick="closePoemCard('poem6')">
+                <span class="titleOfContent">When the Arduous Life Tries to Kill You </span><br>
+                <span class="authorOfContent">By Gian Delos Reyes</span>
+                <br>
+                <br>
+                When sonorous laughter haunts you down, <br>
+                Boost all the mellow in your ears <br>
+                When internal angst thorns you down, <br>
+                Don’t let its aftermath shatter you anew <br>
+                When drastic pressure conquers all in you, <br>
+                Let your tears flow and ease you <br>
+                When embarrassment dims in you, <br>
+                Don’t let it unnerve you all the way through <br>
+                When grief bores something within you, <br>
+                Express your burden to starkly heal you <br>
+                When stress plagues you down, <br>
+                Let the nature serenely mend you <br>
+                When loneliness quivers you, <br>
+                Ask someone to firmly hug you <br>
+                When failure ebbs all that you have, <br>
+                Don’t let despondency dictate you <br>
+                When things just go the wrong way, <br>
+                Keep on going anyway <br>
+                Trust me, <br>
+                It’s just another day of life <br>
+                When life becomes a tough fight <br>
+                And hope seems to fade in sight, <br>  
+                I dare you to never give up <br>
+                Never cease <br>
+                Never stop <br>
+                Valiantly fighting it back <br>
+                It may take a decade of mental war, <br>
+                But you’ll get there <br>
+                And one day, <br>
+                There comes a moment <br>
+                You’ll realize <br>
+                That somehow <br>
+                You’re finally clean<br>
+
+            
+            
+            </p>
+        </div>
+    </div>
+    <div class="lightbox" id="authorNote6" >
+        <div class="card authorCard">
+            <div class="contentPoem">
+                <img src="Images/close.png" alt="close" class="closeButtonPoem" onclick="closePoemCard('authorNote6')">
+                <h3 class="authorNoteTitle">Author's Note</h3>
+                <br>
+                <p class="authorNoteContent">
+                    When the arduous life tries to kill you is simply a poem about counter acting mental struggles. <br>
+                    Mental health problems seems to take a toll on many individuals and signs can rarely be observed  <br>
+                    on someone unless they speak about it. Therefore, spreading words that amplifies the spirit and soul <br>
+                    of an individual is absolutely pivotal. This piece is an epitome of the latter statement. <br>
+                    After all, we should be reminded that words can mean so much because one word can take <br>
+                    a life faster than a gunshot. <br>
+              
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <div class="lightbox" id="poem7" >
+        <div class="card">
+            <p class="contentPoem">
+                <img src="Images/close.png" alt="close" class="closeButtonPoem" onclick="closePoemCard('poem7')">
+                <span class="titleOfContent">Twenty Years</span><br>
+                <span class="authorOfContent">By Gian Delos Reyes</span>
+                <br>
+                <br>
+                Twenty years from now, <br>
+                I shall search for the clouds of voices. <br>
+                Voices that were densely thundering and deafening, <br>
+                But never vague and nuanced. <br>
+                <br>
+                I shall become one with the voices of the throngs. <br>
+                Filled with sounds from a proud community, <br>
+                A community in which I belong. <br>
+                I must’ve been with them in their blobs. <br>
+                Not a watcher from afar who looked at them all day long. <br>
+                <br>
+                I shall bring the message into dissemination. <br>
+                Our words radiating in every ear, <br>
+                Enticing them to burn the aching past that bore them in sorrow. <br>
+                A past with a myriad of infamous memories <br>
+                Enriched in a quest to seek acceptance and validation, <br>
+                Yet reimbursed with condemnation. <br>
+                <br>
+                Twenty years from now, <br>
+                I shall see the news with an abundance of tears. <br>
+                Not for a gay man bombarded with wounds and bruises, <br>
+                But for a humanity that embarks us on love and liberty. <br>
+                A news so easy to dream, <br>
+                Now seen explicitly clear to feel true and real. <br>
+                <br>
+                Twenty years from now, <br>
+                I shall be parted from the rings of hell, <br>
+                For I must follow the serene and pacified melodies. <br>
+                Not in the dynamics of slaps and cries <br>
+                That swallowed my ears. <br>
+                <br>
+                My sleek hands shall manhandle you with care, <br>
+                For you shall not be in the heaves of their belt’s vicious force <br>
+                Neither the litany of wrenching words, <br>
+                Beseeching you to leave their house <br>
+                That unveiled to be the nightmare’s home. <br>
+                <br>
+                Twenty years from now, <br>
+                I shall let my progeny play in seventh heaven. <br>
+                Give them the very toy that made their majestic souls enliven. <br>
+                Instead of other toys that showered their faces with antipathy, <br>
+                Asking me if they had done something so unforgiven <br>
+                To be rendered such a piece that is so abhorrent. <br>
+                <br>
+                I shall give my boys their dolls and makeup that made them excited.<br>
+                Share the cars with my girls as they requested.<br>
+                For I would prefer being pitted against the gossip of my neighbor,<br>
+                Than let my children play in the scare of bliss,<br>
+                Where they are unsettled with the toy that they had never longed for.<br>
+                <br>
+                Twenty years from now,<br>
+                I shall be anchored in the lexicality of forward,<br>
+                That you shouldn’t go backwards and shield yourself against me,<br>
+                That being gay isn't as disgusting as the world has painted it to be,<br>
+                That sometimes people should learn to move forward towards me.<br>
+                Forward: For I am a gay man that blossoms in camaraderie.<br>
+                Not a devil that framed his image in malice and promiscuity.<br>
+                Forward because he who have abhorred me for who I should be,<br>
+                Is beyond more loathsome than a serpent can be.<br>
+                <br>
+                Twenty years from now,<br>
+                I shall open my Facebook with felicity,<br>
+                Seeing every context with dominant glee<br>
+                While I let myself wander in the presence of ease.<br>
+                Can it stay like this, unlike before?<br>
+                Before my eyes had swirled in the spaces of anxiety and fear.<br>
+                Fear of scrolling towards the queer-hated post<br>
+                That jolted my eyes and made them shear.<br>
+                So much, though, that they were begging me to stop looking.<br>
+                Telling me to please cease its function immediately.<br>
+                As if they would rather pick the side of a dilemma,<br>
+                Where my vision is an anathema.<br>
+                As if they would prefer not to let me see,<br>
+                Than let me move back in the thorns of the painful testimony<br>
+                That haunts me to the highest degree.<br>
+                <br>
+                Twenty years from now,<br>
+                I shall be in the corners of my wall,<br>
+                Lingering in the love of my man, <br>
+                Who made me fall.<br>
+                Oh, how much it had veered from the bitterness that I can recall.<br>
+                Once, I was a little kid who stayed in these walls.<br>
+                Hearing the familiar scars of my bully’s humiliation,<br>
+                Mocking me as I’m an illness for being queer, he said.<br>
+                A phrase so simple and short,<br>
+                Yet ravaged me in a million of cannonballs.<br>
+                <br>
+                Twenty years from now,<br>
+                I would be my personal chaperone.<br>
+                Not a nemesis that hurdled his clone.<br>
+                I will dare myself to shine<br>
+                In the place where life is abound,<br>
+                Rather than die and suffocate<br>
+                In the grueling waves of my closet.<br>
+                I will keep on moving in my own direction <br>
+                Despite the face of many rejections.<br>
+                I will let myself be that ‘rainbow’<br>
+                In a world spattered in shades of darkness.<br>
+                I will embody the gay that I am<br>
+                Because there is a prevailing beauty in gay<br>
+                That needs to behold.<br>
+                <br>
+                All that magic in twenty years.<br>
+                <br>
+                I may truly crave your existence<br>
+                And hate your absence.<br>
+                I may recognize your essence<br>
+                And love you for bringing a difference. <br>
+                But as long as your name is in the future, <br>
+                Every word will remain nothing but a mere dream.<br>
+                So until then that everything is as real as it seems, <br>
+                I will wait for you, <br>
+                Twenty years.<br>  
+            </p>
+        </div>
+    </div>
+     <div class="lightbox" id="authorNote7" >
+        <div class="card authorCard">
+            <div class="contentPoem">
+                <img src="Images/close.png" alt="close" class="closeButtonPoem" onclick="closePoemCard('authorNote7')">
+                <h3 class="authorNoteTitle">Author's Note</h3>
+                <br>
+                <p class="authorNoteContent">
+                    Twenty years is a poem that shows the longing of a kid who strives <br>
+                    in the pursuit of social change. It showcases the amount of wishes that <br>
+                    he has in the subsequent years or rather the future. The future in which <br>
+                    there is nothing but an amalgam of peace, love, and pride. It may be a <br>
+                    subjective poem and that his wish is personal in nature. However, <br>
+                    it certainly is the same wish of many more kids around the world., <br>
+                    and he is merely one of them. <br>
+              
+                </p>
+            </div>
+
+        </div>
+    </div>
+     <div class="lightbox" id="poem8" >
+        <div class="card">
+            <p class="contentPoem">
+                <img src="Images/close.png" alt="close" class="closeButtonPoem" onclick="closePoemCard('poem8')">
+                <span class="titleOfContent">They Will</span><br>
+                <span class="authorOfContent">By Gian Delos Reyes</span>
+                <br>
+                <br>
+                I had always lingered at the penumbra,<br>
+                Staying in the shadows of darkness<br>
+                Like a rat that hides in the bushes.<br>
+                I had always kept this one thing so anonymous.<br>
+                And only I knew about it.<br>
+                Until they sensed my action.<br>
+                Until they find themselves on a mission:<br>
+                A pursuit to know this abstract subtleness.<br>
+                And the last thing that I'd do is realize<br>
+                That it might be over.<br>
+                They will search for my secret<br>
+                In the trails of my rainbow closet.<br>
+                <br>
+                They will look at me<br>
+                In a different story.<br>
+                They will look at me like a villain<br>
+                Upon knowing my identity.<br>
+                I looked at the clock,<br>
+                Hoping its hands would turn back.<br>
+                I begged Peter Henlein,<br>
+                That maybe,<br>
+                Just maybe I could restart.<br>
+                I want to live back in the past<br>
+                When they looked at me<br>
+                In their smiles and love<br>
+                Rather than the disgust and laughs.<br>
+                <br>
+                They will disclose this identity.<br>
+                They will try to paint me<br>
+                As notorious as it can be.<br>
+                They will fight with me<br>
+                In an effort to change my identity.<br>
+                They will counter me<br>
+                Until they feel like it's victory,<br>
+                That I'm denied of my rights and individuality.<br>
+                <br>
+
+                They will challenge me<br>
+                If they must.<br>
+                And they will tear my heart apart<br>
+                If they must.<br>
+                It is a journey of survival<br>
+                Through every slap and blood.<br>
+                They will torment me with all their gust.<br>
+                With every word. With every wound.<br>
+                I shouted, "Save me!" on the furious ground.<br>
+                Until then that I lost my ultimate spark,<br>
+                Yet they will offer me no remorse<br>
+                Or shame for something they've done.<br>
+                Because having a gay child<br>
+                Isn't as satisfying as it sounds.<br>
+                <br>
+                I wish I woke up<br>
+                In a new world.<br>
+                A world different from how it used to be.<br>
+                How I'm ready to change everything;<br>
+                How I'm ready to force myself on a battleground,<br>
+                Fighting for his right to savor the sense of haven;<br>
+                Fighting for everything that he had long forgotten.<br>
+                <br>
+                I wish I woke up<br>
+                Without thinking of everything,<br>
+                Without thinking if they will hurt me,<br>
+                Without thinking if they will simply laugh at me.<br>
+                But as reality becomes static,<br>
+                The first thing I'd do is realize<br>
+                That my wishes are a myth.<br>
+                Because in a thousand of 'what if they won't? <br>
+                There will only be one true answer.<br>
+                And it would always be:<br>
+                They will.<br>
+            </p>
+        </div>
+    </div>
+    <div class="lightbox" id="authorNote8" >
+        <div class="card authorCard">
+            <div class="contentPoem">
+                <img src="Images/close.png" alt="close" class="closeButtonPoem" onclick="closePoemCard('authorNote8')">
+                <h3 class="authorNoteTitle">Author's Note</h3>
+                <br>
+                <p class="authorNoteContent">
+                    They will is a poem about a homosexual kid that craves for movement. <br>
+                     In a world that's evidently static with regards to social issues, <br>
+                     we might feel extremely hopeless and scared. Sometimes, you'd want  <br>
+                     to fight against everything, but there's always a trauma that let you drawback. <br> 
+                     Sometimes, there's always an experience that guards your voice at the back. <br>
+                     Sometimes, you'd want to let go of the future and strangle yourself in the previous times. <br>
+                     But yet again, we have to. Let's hope we don't move back in time and <br>
+                     move from now as well as the past. It's time to change. <br>
+              
+                </p>
+            </div>
+
+        </div>
+    </div>
+     <div class="lightbox" id="poem9" >
+        <div class="card">
+            <p class="contentPoem">
+                <img src="Images/close.png" alt="close" class="closeButtonPoem" onclick="closePoemCard('poem9')">
+                <span class="titleOfContent">The Unorthodox Barbie</span><br>
+                <span class="authorOfContent">By Gian Delos Reyes</span>
+                <br>
+                <br>
+                Barbie. <br>
+                Her name's so enticing;<br>
+                Perfect to whom <br>
+                That has majestic beauty. <br>
+                A name given and entrenched <br>
+                To a woman that's so blessed <br>
+                But bespangled upon <br>
+                A lingering misery. <br>
+                Beyond bitter it seems<br>
+                That her life's bridled <br>
+                By the human that she sees,<br>
+                Hiding her genuine colors <br>
+                From the tamed world herein. <br>
+                <br>
+                She's seen to be<br>
+                As impeccable as her beauty. <br>
+                She's expected to be<br>
+                The gleaming woman that she should be. <br>
+                Her nails must be colored <br>
+                In the spectrum of pink. <br>
+                Her hairs must be styled <br>
+                Like a princess in the west. <br>
+                And her dress must be <br>
+                A dazzling silky skirt<br>
+                That flies accordingly with the wind. <br>
+                She cries again, <br>
+                Asking when it's going to change. <br>
+                Since when were her nails <br>
+                Colored in the hues of black?<br>
+                Since when were her hairs<br>
+                Styled like the boy in the fashion club? <br>
+                And since when were her heels and skirts<br>
+                Became suits instead?<br>
+                <br>
+                She's bounded to be <br>
+                The woman that Ken would fondly see. <br>
+                She acts to be<br>
+                Caressed in Ken's warmth of accompany<br>
+                Just like how humans paint her to be. <br>
+                She cries once more, <br>
+                Wondering why she liked Barbies <br>
+                And not Kens. <br>
+                <br>
+                Nothing swallows her<br>
+                But a dynamic quandary<br>
+                And the thought <br>
+                Of a polarizing pit,<br>
+                Waiting to fruit <br>
+                As events unfold<br>
+                Before her eyes.<br>
+                But as she realizes her reality, <br>
+                She asks herself, <br>
+                Isn't Barbie allowed to be<br>
+                Attracted to whom she likes to be with?<br>
+                Why strive for something <br>
+                You're not destined to be? <br>
+                <br>
+                Rainbow creeps profoundly <br>
+                Through her veins <br>
+                And heart, <br>
+                And eyes, <br>
+                And brain<br>
+                As she realizes her urge <br>
+                To be her genuine interior self <br>
+                That echoes all over her body. <br>
+                That day, she cries one last time<br>
+                Not in the bitter shadows that she suffers, <br>
+                But in the ease of all her masked jungle. <br>
+                She is Barbie,<br>
+                The Unorthodox Barbie.<br>
+          
+            
+            </p>
+        </div>
+    </div>
+     <div class="lightbox" id="authorNote9" >
+        <div class="card authorCard">
+            <div class="contentPoem">
+                <img src="Images/close.png" alt="close" class="closeButtonPoem" onclick="closePoemCard('authorNote9')">
+                <h3 class="authorNoteTitle">Author's Note</h3>
+                <br>
+                <p class="authorNoteContent">
+                    Growing up, I always saw Barbie as someone who represented perfection. <br>
+                    She was expected to look a certain way, dress a certain way, and even love a certain person. <br>
+                    But the more I thought about it, the more I realized that people are often treated the same way.<br>
+                     Society creates an image of who we're supposed to be, and when we don't fit that image, we're made <br>
+                     to feel like we're the ones who need to change.<br>
+                    <br>
+                    This poem is about that quiet struggle of trying to become someone the world accepts while slowly losing the person you<br>
+                    truly are. It speaks for those who have questioned their identity, hidden parts of themselves out of fear, or felt pressured<br>
+                    to live according to expectations they never chose. Sometimes, the hardest battle isn't against other people—it's against <br>
+                    the voice that tells us we have to be someone else just to belong.<br>
+                    <br>
+                    I called her The Unorthodox Barbie because I wanted to show that there is no wrong way to be yourself. <br>
+                    Just because someone doesn't fit the mold others have created doesn't make them any less beautiful, worthy, or real.<br>
+                    Being different isn't something that needs fixing. It's something that deserves to be embraced.<br>
+                    <br>
+                    I hope this poem reminds every reader that they were never born to fit inside someone else's idea of perfection. <br>
+                    We all deserve the freedom to live honestly, to love without shame, and to become the person we know we are, <br>
+                    even if the world doesn't always understand it.<br>
+              
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <div class="lightbox" id="poem10">
+        <div class="card">
+            <p class="contentPoem">
+                <img src="Images/close.png" alt="close" class="closeButtonPoem" onclick="closePoemCard('poem10')">
+                <span class="titleOfContent">Dear Human,</span><br>
+                <span class="authorOfContent">By Gian Delos Reyes</span>
+                <br>
+                <br>
+                What if I confessed to be <br>
+                More flawed and wretched than a serial killer?<br>
+                Would you laugh? <br>
+                Would you ridicule?<br>
+                Would you fear me? <br>
+                Or perhaps…….believe in me? <br>
+                <br>
+                If I were to share that I am gay,<br>
+                What emotions would you display?<br>
+                Is it shame?<br>
+                <br>
+                <span style="margin-left: 14rem;">Anger? </span> <br>
+                <span style="margin-left: 4rem;">Disappointment?  </span> <br>
+                <span style="margin-left: 12rem;">Embarrassment?</span> <br> 
+                <span style="margin-left: 5rem;">Sadness?</span> <br>                       
+                <span style="margin-left: 10rem;"> And confusion?</span> <br>
+                <br>
+                Or is it…. love?<br> 
+                <span style="margin-left: 10rem;">Contentment?</span> <br>
+                <span style="margin-left: 4rem;"> Joy? </span> <br>               
+                <span style="margin-left: 13rem;"> And delightment?</span> <br>
+                <br>
+                What will you do if I told you <br>
+                My visage used to hide in a litany of surgeries?<br>
+                Would you still look at me?<br>
+                Would you punch me, barbarically?<br>
+                Would you slap me in all of your prowess mighty?<br>
+                Would you still adore my vanity? <br>
+                Or would you burn me for betrayal,<br>
+                <span style="margin-left: 14rem;"> deception,</span> <br>
+                <span style="margin-left: 14rem;"> resentment,</span> <br>
+                <span style="margin-left: 14rem;">and… at least revulsion?</span><br>    
+                <br>        
+                What happens if I were to unveil the secret about my hands? <br>
+                Oh! How do you not remember those hands you used to caress? <br>
+                Those hands that was never really as immaculate as they seem! <br>
+                Those hands that used to be abound of sins. <br>
+                Those hands anchored to clandestinely steal and sell <br>
+                Amidst the battered scars, <br>
+                <span style="margin-left: 10rem;">crimson cuts, </span><br>   
+                <span style="margin-left: 10rem;">smoldering bruise, </span><br>                 
+                <span style="margin-left: 10rem;">and handcuffs tied in every wrist.</span><br>                 
+                Look at it once more,<br>
+                Would you still touch them? <br>
+                Would you still glorify its apparent majesty?<br>
+                Or would you depart upon its seemingly<br>
+                <span style="margin-left: 14rem;">Abhorrent,</span><br>  
+                <span style="margin-left: 1rem;">Atrocious, </span><br>  
+                <span style="margin-left: 6rem;">Injurious,</span><br>  
+                <span style="margin-left: 3rem;">Hideous, </span><br>                         
+                <span style="margin-left: 12rem;"> Pitiful,</span><br> 
+                <span style="margin-left: 5rem;">Or….immoral feature?</span><br>
+                <br>
+                What will you tell me if I told you I’m a failure?<br>
+                That things just doesn’t go the right way. <br>
+                How will you see me if were to tell you, <br>
+                “I am your pathetic, lost, miserable, and filthy fellow encrusted in loathe.”<br>
+                Don’t lie to me.<br>
+                <span style="margin-left: 4rem;">Am I still your favorite son?</span><br>
+                <span style="margin-left: 9rem;">Am I still your amiable best friend?</span><br>
+                Am I still the pride of your school?<br>
+                <span style="margin-left: 14rem;">Am I still the prodigy of beauty?</span><br>                                          
+                <span style="margin-left: 6rem;">How about your hero?</span><br>
+                <span style="margin-left: 13rem;">Or your lovely and clever student?</span><br>                      
+                 <span style="margin-left: 2rem;">Would I still be the love of your life?  </span><br> 
+                 <br>
+                 What if I were those things I told you? <br>                                                           
+                Would you still love me as tantamount as before? <br>
+                Or would you butcher me with hatred to suffer….. in my regretful past? <br>            
+            </p>
+        </div>
+    </div>
+    <div class="lightbox" id="authorNote10" >
+        <div class="card authorCard">
+            <div class="contentPoem">
+                <img src="Images/close.png" alt="close" class="closeButtonPoem" onclick="closePoemCard('authorNote10')">
+                <h3 class="authorNoteTitle">Author's Note</h3>
+                <br>
+                <p class="authorNoteContent">
+                    Dear Human, is a poem that conveys more so on human complexities. <br>
+                    Asking questions about what humanity would do if they were entrenched <br>
+                    into such wretched situations.  “No one is perfect,” a prominent quote<br>
+                     we use to say. But what if, we are worse than others? Would others look <br>
+                     at you the way they used to before?<br>
+              
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <div class="lightbox" id="poem11" >
+        <div class="card">
+            <p class="contentPoem">
+                <img src="Images/close.png" alt="close" class="closeButtonPoem" onclick="closePoemCard('poem11')">
+                <span class="titleOfContent">Dear little Gian,</span><br>
+                <span class="authorOfContent">By Gian Delos Reyes</span>
+                <br>
+                <br>
+                    One thing I hate about you <br>
+                    Is just how easy it is to doubt yourself <br>
+                    And feel like things never truly go the right way<br>
+                    Sometimes it feels too monotonous<br>
+                    To think about how every aspect of you<br>
+                    Seems lacking or simply put, “Never enough,”<br>
+                    Yet you’ve worked so hard and even persevered<br>
+                    To venture your way out of your norm world<br>
+                    There were so many quandaries... <br>
+                    So much thoughts that you won’t be able to make it<br>
+                    Yet you decide to let yourself try it anyway<br>
+                    Sometimes you fail, <br>
+                    But most of them succeeded too! <br>
+                    And I think it would be so unfair to let <br>
+                    Those big things get disregarded <br>
+                    Just because all you think are those things <br>
+                    That could’ve been better<br>
+                    Do you remember ‘those’ times?<br>
+                    All those "How I wish I did better!" <br>
+                    All those "What if I was just as good as others?" <br>
+                    All those "Am I even in the right path?"<br>
+                    All those worries and jokes <br>
+                    Started from a random doubt <br>
+                    But even then it kept going...and...going...and...going<br>
+                    And since then, it never truly stopped from there.<br>
+                    In a point of post-crisis,   <br>
+                    Those worries would never matter now do they?<br>
+                    It took you time to learn that life only gets better;<br>
+                    That everything about you wasn’t so bad at all,<br>
+                    Even more so that life continues to show you<br>
+                    That it is possible to conquer<br>
+                    Even when all you have is a gaslighted hope  <br>
+                    That seems so fake. <br>
+                    As I enter your last teenage year,<br>
+                    There’s a multitude of things <br>
+                    That I would’ve have loved to tell you.<br>
+                    Some of it was not to take Computer Science(help)<br>
+                    And one thing that I have learned now <br>
+                    Is that it’s so incredibly important <br>
+                    To just be happy being you<br>
+                    Without fearing the prospect of life.<br>
+                    I now live by the quote,<br>
+                    “You can’t wait until life isn’t hard anymore <br>
+                    before you decide to be happy.”<br>
+                    And you just have to realize that.<br>
+                    There will be times when life will challenge you<br>
+                    And those moments when you aimed for redemption <br>
+                    Doesn't feel as comforting anymore<br>
+                    So what ever you want to do now, just so you can <br>
+                    be happy for a minute, DO IT!<br>
+                    Always choose to be happy because it is only <br>
+                    through smiles That makes an arduous life journey bearable.<br>
+                    Also, I learned that<br>
+                    There’s no point of fearing life in the future.<br>
+                    Our future is not promised;<br>
+                    There’s no guarantee of being successful or whatsoever.<br>
+                    But don’t let those stop you from savoring the present.<br>
+                    Some day, your dreams will make you step foot into reality <br>
+                    And by then you’ll live by in the simple words of <br>
+                    "I never knew I would made it." <br>
+                    And if things go rough for me and your adult self, <br>
+                    All I know is that you got our back. <br>
+                    Because your soul, heart, and blood will always <br>
+                    Stay as one and united, ever brave and happy, Gian. <br>
+                    <br>
+                    <br>
+                    <span style="display:flex;justify-self: end;">All love from your growing self,</span><br>
+                    <span style="display:flex;justify-self: end;">Gian</span>
+                <br>
+                <br>
+            
+            </p>
+        </div>
+    </div>
+    <div class="lightbox" id="authorNote11" >
+        <div class="card authorCard">
+            <div class="contentPoem">
+                <img src="Images/close.png" alt="close" class="closeButtonPoem" onclick="closePoemCard('authorNote11')">
+                <h3 class="authorNoteTitle">Author's Note</h3>
+                <br>
+                <p class="authorNoteContent">
+                    This is a poem about the things I would have told <br>
+                    to my younger self that continues to fear life and belittle his skills.<br>
+                     As someone who often compares himself to others, it feels impossible to<br>
+                      move forward when all you witness are the setbacks and failures that <br>
+                      gradually destroys you.  Entering my last teenage year, however, there <br>
+                      were things that I’ve learned and doubts that had been omitted. And I <br>
+                      would love my younger self to hear that.    <br>
+                </p>
+            
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+
+</body>
+
+<!-- footer -->
+
+
+<footer>
+    <div class="container-fluid">
+        <div class="row rowLogo" style="background-color: #523d23; border-top: 5px solid #ffface;">
+            <div class="col-12 col-lg-6" style="margin-top: 2rem;">
+                <div class="footerEntirelogo">
+                    <a href="index.html"><img src="Images/Logo.png" class="footerLogo" alt="ian's sweet pen logo"></a>
+                    <div class="footerSubLogo">
+                        <a href="index.html"><h1 class="footerMainLogo">Ian's Sweet Pen</h1></a>
+                        <a href="index.html"><h4 class="footersublogo">Gian's Art & Literary Website</h4></a>
+                    </div> 
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="contactInfo">
+                    <h3 style="font-size: 2rem; color: #fff8bf;">Contact Us</h3>
+                    <h3>giancarl.delosreyes11@gmail.com</h3>
+                    <h3>Baguio City, Philippines</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row rowLogo2">
+            <div class="col-12 col-lg-6 order-2 order-lg-1" style="background-color: #523d23; padding-bottom: 3rem;">
+                <img src="Images/emojifooter.png" class="emojiFooter" alt="emoji cute animals">
+            </div>
+             <div class="col-12 col-lg-6 order-1 order-lg-2" style="background-color: #523d23;">
+                <div class="remainingInfo">
+                    <h3 class="contactNum">+63 991 110 3894</h3>
+                    <div class="socials">
+                        <a href="https://www.instagram.com/gian_delos_reyes_17/" target="_blank"><h3>Instagram | </h3></a>
+                        <a href="https://x.com/Eduvise_Ian?" target="_blank"><h3 style="padding-left: 5px;">Twitter</h3></a>
+                    </div>
+                </div>
+
+                
+             </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+</script>
+
+<script src="scriptindex.js"></script>
+        
+
+</html>

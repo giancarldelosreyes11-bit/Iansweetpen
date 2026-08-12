@@ -1,0 +1,1232 @@
+@font-face {
+    font-family: 'Tan Summers';
+    src: url(Fonts/TAN-SUMMERS.otf);
+}
+
+@font-face {
+    font-family: 'Palatino';
+    src: url(Fonts/Palatino_Medium.otf);
+}
+
+@font-face{
+    font-family:'Tan Astoria';
+    src: url(Fonts/TAN-ASTORIA-Display.ttf);
+}
+
+@font-face {
+    font-family: 'Tan Variety';
+    src: url(Fonts/TAN-_VARIETY.otf);
+}
+
+@font-face {
+    font-family: 'Times New Roman';
+    src: url(Fonts/Tinos-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Comic Sans';
+    src: url(Fonts/Ldfcomicsanslight-6dZo.ttf);
+}
+
+*{
+    cursor: url(Images/pointercursor.png), pointer;
+}
+
+:root{
+    --fs-1:3.7rem;
+    --fs-2:1.8rem;
+    --fs-3:1.7rem;
+    --fs-4:1.5rem;
+    --fs-5:2rem;
+    --fs-6:16rem;
+    --fs-7:9.5rem;
+    --fs-8: 2.5rem;
+    --fs-10: 3rem;
+    --fs-11: 2.5rem;
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+.header{
+    background-color: #523d23;
+}
+
+.headerLogo{
+    width: var(--fs-7);
+    height: var(--fs-7);
+    cursor: url(Images/linkcursor.png), auto;
+}
+
+.textHeaderLogo{
+    font-family: 'Tan Astoria';
+    font-size: var(--fs-1);
+    color: white;
+    margin: 0px;
+    cursor: url(Images/linkcursor.png), auto;
+
+}
+
+
+.textSubheaderLogo{
+    font-family: 'Tan Variety';
+    color: white;
+    letter-spacing: 4px;
+    font-size: var(--fs-2);
+    margin: 0px;
+    margin-top:-7px;
+    cursor: url(Images/linkcursor.png), auto;
+}
+
+.textLogos{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    
+}
+
+
+.divHeaderLogos{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.divHeaderLogos a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.searchButton img{
+    width: var(--fs-8);
+    height: var(--fs-8);
+    cursor: url(Images/linkcursor.png), auto;
+}
+
+.searchButton{
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.searchEngine{
+    position: absolute;
+    width: 35%;
+    padding: 15px;
+    background-color: white;
+    border-radius: 50px;
+    top:var(--fs-5);
+    right: var(--fs-6);
+    z-index: 2;
+}
+
+.searchEngineMobile{
+    width: 90%;
+    padding: 15px;
+    background-color: white;
+    border-radius: 50px;
+    margin: 20px 0;
+}
+
+.searchInput{
+    font-family: 'Tan Summers';
+    font-size: var(--fs-3);
+    outline: none;
+    border: 0; 
+    width: 85%;
+    cursor: url(Images/linkcursor.png), auto;
+}
+
+
+.searchInput::placeholder{
+    color: #523d23;
+}
+
+.search-alignment{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    gap: 3px;
+}
+
+.search-alignment input{
+    color: #523d23;
+ 
+}
+
+.resultsContainer{
+    display: flex;
+    flex-direction: column;
+    padding-left:0;
+    display: none;
+    cursor: url(Images/linkcursor.png), auto;
+}
+
+.result-item{
+    font-family: 'Palatino';
+    font-size: var(--fs-4);
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    border-bottom: 1px solid #eee;
+    color: #523d23 !important;
+}
+
+.result-itemMobile{
+    font-family: 'Palatino';
+    font-size: var(--fs-4);
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    border-bottom: 1px solid #eee;
+    color: #523d23;
+}
+
+
+.result-item:hover{
+    color:#fff8bf !important;
+    background-color: #523d23;
+}
+
+.result-itemMobile:hover{
+    color:#fff8bf;
+    background-color: #523d23;
+}
+
+.contactButton{
+    position: absolute;
+    font-family: 'Tan Astoria';
+    top: var(--fs-5);
+    right: var(--fs-11);
+    color: white;
+    font-size: var(--fs-10);
+    border: 3px solid white;
+    line-height: 1;
+    border-radius: 45px;
+    padding: 20px;
+    padding-bottom: 5px;
+    cursor: url(Images/linkcursor.png), auto;
+
+}
+
+
+.contactButton:hover{
+    background-size: cover;
+    background-image: url(Images/contact\ hover.gif);
+    background-repeat: no-repeat;
+    color: #fff8bf;
+    border-color: #fff8bf;  
+    transform: scale(1.1);
+    transition-duration: 2s; 
+    text-shadow: 2px 2px 20px black;
+}
+
+.mobileMenuContainer{
+    background-color: rgba(250, 255, 183, 0.63);
+    backdrop-filter: blur(10px);
+    padding: 1.5rem 0;
+    padding-left: 10rem;
+    padding-right: 13rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    position: absolute;
+    width: 100%;
+    animation: slide-down 1s ease-out;
+    position: absolute;
+    z-index: 1;
+    top:0;
+    margin-top: 9rem;
+}
+
+@keyframes slide-down {
+      0% { opacity: 0; transform: translateY(-10%); z-index: -1;}   
+      25% {z-index: -1;}
+      50%{z-index:-1;}
+    100% { opacity: 1; transform: translateY(0);}
+}
+
+
+.mobileMenu{
+    font-weight: 1000;
+    font-size: var(--fs-2);
+    font-family: 'Tan Summers';
+    list-style: none;
+    color: #523d23;
+    padding: 7px 0;
+    padding-left: 2rem;
+    line-height: 1.5;
+    border-radius: 10px;
+}
+
+.currentmobilemenu{
+    font-weight: 1000;
+    font-size: var(--fs-2);
+    font-family: 'Tan Summers';
+    list-style: none;
+    background-color: #523d23;
+    color: #fff8bf;
+    padding: 7px 0;
+    padding-left: 2rem;
+    line-height: 1.5;
+    border-radius: 10px;
+}
+
+.menuIcon{
+    width: 8rem;
+    height: 10rem;
+    position: absolute;
+    right: 2rem;
+    display: flex;
+    align-self: center;
+    cursor: url(Images/linkcursor.png), auto;
+}
+
+/*might not work later because a tag is not in place after the class*/
+.mobileMenu:hover{
+    background-color: #523d23;
+    color: #fff8bf;
+    cursor: url(Images/linkcursor.png), auto;
+}
+
+.closeIcon{
+    position: absolute;
+    width: 8rem;
+    height: 8rem;
+    right: 2rem;
+    display: flex;
+    align-self: center;
+    display: none;
+    cursor: url(Images/linkcursor.png), auto;
+}
+
+.footerLogo{
+    width: 13rem;
+}
+
+.footerEntirelogo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 2rem;
+}
+
+.footerSubLogo{
+    display: flex;
+    flex-direction: column;
+}
+
+.footerMainLogo{
+    font-family: 'Tan Astoria';
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: white;
+    cursor: url(Images/linkcursor.png), auto;
+}
+
+.footersublogo{
+    font-family: 'Tan Variety';
+    margin-top: 0;
+    letter-spacing: 0.25rem;
+    font-weight: 600;
+    color: white;
+    cursor: url(Images/linkcursor.png), auto;
+}
+
+.footerSubLogo a{
+    text-decoration: none;
+}
+
+.contactInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 3px;
+    padding-right: 2rem;
+    margin-top: 5rem;
+}
+
+.contactInfo h3{
+    font-family: 'Tan Summers';
+    font-weight: 600;
+    color: white;
+    font-size: 1.7rem;
+    
+}
+
+.emojiFooter{
+    width: 37rem;
+    padding-left: 2rem;
+}
+
+.socials{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.socials a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Tan Summers';
+    
+}
+
+.socials a h3{
+    font-size: 1.7rem;
+    font-weight: 600;
+    cursor: url(Images/linkcursor.png), auto;
+}
+
+.contactNum{
+    font-size: 1.7rem;
+    font-family: 'Tan Summers';
+    color: white;
+    font-weight: 600;
+}
+
+.remainingInfo{
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 5rem;
+}
+
+
+
+.horizontalmenu ul{
+    list-style: none;
+    padding: 10px 0;
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    z-index: 1;
+    position: absolute;
+    justify-self: center;
+}
+
+.currentmenu{
+    font-size: var(--fs-2) ;
+    color: #fff8bf;
+    font-family: 'Tan Summers';
+    font-weight: 600;
+    padding: 7px 10px;
+    background-color: #7d5d1e;
+}
+
+.menu{
+    padding: 7px 10px;
+    position: relative;
+    
+}
+
+.menu::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    bottom: 0;
+    height: 4px;
+    left: 50%;
+    background-color: #fff8bf;
+    transition: all 0.5s;
+}
+
+.menu:hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+
+.menu a:hover{
+    color: #fff96a;
+}
+
+.menu:hover::before{
+    width: 100%;
+    left:0;
+}
+
+.menu a{
+    font-size: var(--fs-2);
+    font-weight: 600;
+    font-family: 'Tan Summers';
+    text-decoration: none;
+    color: #fff8bf;
+    cursor: url(Images/linkcursor.png), auto;
+}
+
+
+.welcomebanner{
+    width: 100%;
+    z-index: -1;
+    position: relative;
+}
+
+.scrollDown{
+    z-index: 1;
+    font-family: 'Tan Summers';
+    font-size: var(--fs-5);
+    font-weight: 600;
+    color: #fff8bf;
+    text-align: center;
+
+}
+
+
+
+.child-Nav{
+    position: absolute;
+    bottom: 1.5rem;
+    width: 100%;
+}
+
+.parent-Img{
+    position: relative;
+    width: 100%;
+}
+
+.firstRowLeft{
+    background-color: #523d23;
+}
+
+.secondRowLeft{
+    background-color: #ffface;
+}
+
+.pictureLeft{
+    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-self: center;
+    padding: 2rem 1rem;
+}
+
+.VoiceInterface{
+    width: 7rem;
+    height: 7rem;
+    margin-top: 2rem;
+    cursor:pointer;
+    transition:0.3s;
+    border-radius: 50%;
+    cursor: url(Images/linkcursor.png), auto;
+}
+
+.titleDiv{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+    margin-left: 1.5rem;
+}
+
+.poemTitle{
+    font-family: 'Tan Summers';
+    font-size: 4rem;
+    color: #523d23;
+    font-weight: 400;
+    position: relative;
+}
+
+.y2kLine{
+    top:0;
+    width: 30rem;
+    height: 8rem;
+    transform: translateX(-93%);
+    margin-bottom: 4rem;
+    
+}
+
+.poem{
+    font-family: 'Palatino';
+    font-size: var(--fs-4);
+    color: #523d23;
+    font-weight: 500;
+    margin-left: 2rem;
+}
+
+.readMoreButtons{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    
+    
+}
+
+.readMore, .authorsNote{
+    background-color: #523d23;
+    color: #ffface;
+    font-family: 'Tan Summers';
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    border-radius: 40px;
+    border: none;
+    font-weight: 600;
+}
+
+.masktext{
+    -webkit-mask-image: linear-gradient(black,rgba(0,0,0,0.2));
+    mask-image: linear-gradient(black,rgba(0,0,0,0.2));
+}
+
+.readMore:hover, .authorsNote:hover{
+    background-color: #947942;
+    border: 5px solid #523d23;
+    cursor: url(Images/linkcursor.png), auto;
+}
+
+.lightbox{
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 500;
+    background: linear-gradient(black,rgba(0,0,0,0.8));
+}
+
+.card{
+    width: 90%;
+    height: 35rem !important;
+    overflow: auto;
+    position: relative;
+     z-index: 501;
+     justify-self: center;
+    margin-top: 2rem;
+    
+}
+
+.card::-webkit-scrollbar {
+    width: 10px;
+}
+
+.card::-webkit-scrollbar-track {
+    background: whitesmoke;
+}
+
+.card::-webkit-scrollbar-thumb{
+    background: linear-gradient(0deg, hsla(54, 100%, 90%, 1) 0%, hsla(51, 42%, 53%, 1) 50%, hsla(35, 100%, 35%, 1) 100%);
+    border-radius: 20px;
+}
+
+
+.contentPoem{
+    padding: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.titleOfContent{
+    font-size: 2rem;
+    font-family: 'Times New Roman';
+    font-weight: 700;
+}
+
+.authorOfContent{
+    font-size: 1rem;
+    font-family: 'Times New Roman';
+    font-weight: 700;;
+    font-weight: 200;
+}
+
+.together{
+    margin-left: 24rem;
+}
+
+.neverhappened{
+    margin-left: 50rem;
+}
+
+.closeButtonPoem{
+    display: flex;
+    justify-self: end;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    cursor: url(Images/linkcursor.png), auto;
+}
+
+.authorNoteTitle{
+    font-family: 'Tan Summers';
+    color: #523d23;
+    margin-left: 2rem;
+    font-weight: 700;
+}
+
+
+.authorCard{
+    background-color: #ffface !important;
+}
+
+.authorNoteContent{
+    margin-left: 2rem;
+    font-family: 'Comic Sans';
+}
+
+.VoiceInterface.playing{
+    animation:wave .8s infinite;
+}
+
+.wavelines{
+    width: 100%; 
+    top:0;
+    left: 0; 
+}
+
+.squarebox{
+    display: flex;
+    top: 0;
+    justify-self: end;
+    width: 35rem;
+    height: 4.5rem;
+}
+
+.scribblestar{
+    width: 80%;
+    height: 5rem;
+    top: 0;
+    display: flex;
+    justify-self: end;
+
+}
+
+.braicelets{
+    width: 100%;
+}
+
+.barbie{
+    width: 100%;
+}
+
+.carousel-wrapper{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:2rem;
+}
+
+.mycarousel{
+    background-image: url(Images/wavy\ background.jpeg);
+    background-size: cover; 
+    position: relative;
+    background-repeat: no-repeat; 
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    overflow: hidden;
+    border-top: 4rem solid #ffface;
+}
+
+
+
+.containerImgForSides1, .containerImgForSides2{
+     width:180px;
+    height:350px;
+    overflow: hidden;
+    transform: translateY(-5%);
+}
+
+.containerImgForSides1 img, .containerImgForSides2 img{
+     width:100%;
+    height:100%;
+    filter: blur(2px);
+    object-fit: cover;
+    object-position: center;
+}
+
+.containerImgForSides1{
+    position:absolute;
+    left:0;
+    z-index:1;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.containerImgForSides2{
+    position:absolute;
+    right:0;
+    z-index:1;
+     border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.leftImages, .rightImages{
+ display: none;   
+}
+
+.leftActive, .rightActive{
+    display: block;
+}
+
+.titleart{
+    position: relative;
+    justify-items: center;
+}
+
+
+.starsgalleryleft{
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    transform: translateY(-15%);
+    width: 38.5%;
+    height: auto;
+    z-index: 2;
+}
+
+.starsgalleryright{
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    transform: translateY(-15%);
+    width: 38.5%;
+    height: auto;
+    z-index: 2;
+}
+
+
+.controllerbtn{
+    position: absolute;
+    color: #523d23;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3rem;
+    height: 3rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.controllerbtn:hover{
+    cursor: url(Images/linkcursor.png), auto;
+}
+
+
+
+.prev{
+    left: 15px;
+}
+
+.next{
+    right: 15px;
+}
+
+
+.slides{
+    display: flex;
+    justify-content: center;
+}
+
+.slide{
+    width:55rem;     
+    max-width:100%;
+    height: 32rem;
+    display: none;
+    border-radius: 15px;
+}
+
+.activePic{
+    display: flex;
+    justify-self: center;
+}
+
+.slide-container{
+    position: relative;
+    display: inline-block;
+    z-index: 3;
+}
+
+.artgallerytitle{
+    text-align: center;
+    font-size: 7rem;
+    font-family: 'Tan Astoria';
+    color: #fff8bf;
+    position: relative;
+
+}
+
+.resultsContainer a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.resultsContainerMobile a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+#preloader{
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #523d23;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition:
+        opacity 0.8s ease,
+        visibility 0.8s ease;
+    cursor: none;
+}
+
+.preloadlogo{
+    width: 10rem;
+    z-index: 2;
+    cursor: none;
+}
+
+.preloadertexts{
+    background: linear-gradient(
+        90deg,
+        white 0%,
+        #fff8bf 40%,
+        #fff8bf 50%,
+        purple 60%,
+        #fff8bf 100%
+    );
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: 250% 100%;
+    animation: glow 1s linear infinite;
+    cursor: none;
+}
+
+#preloader.loaded{
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+@keyframes glow {
+    from{
+        background-position: 200%;
+    }to{
+        background-position: -100%;
+    }
+    
+}
+
+
+@keyframes wave{
+    0%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(1.12);
+    }
+    100%{
+        transform:scale(1);
+    }
+}
+
+
+
+@media screen and (max-width: 375px){
+    :root{
+    --fs-1: 1.7rem;
+    --fs-2: 0.8rem;
+    --fs-4: 1rem;
+    --fs-7: 5.5rem;
+    --fs-8: 1.5rem;
+    --fs-3: 0.9rem;
+    }
+
+    .menuIcon{
+        position: relative;
+        width: 3rem;
+        height: 4rem;
+        transform: translateX(1.5rem);
+    }
+
+    .closeIcon{
+        position: relative;
+        width: 3rem;
+        height: 4rem;
+        transform: translateX(1.5rem);
+    }
+
+    .mobileMenuContainer{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-top: 4.9rem;
+    }
+    
+    
+
+}
+
+
+@media screen and (min-width: 376px) and (max-width: 490px){
+    :root{
+    --fs-1:2.3rem;
+    --fs-2:0.7rem;
+    --fs-4: 1rem;
+    --fs-7: 5.5rem;
+    --fs-8: 1.7rem;
+    --fs-3: 0.9rem;
+    }
+
+    .menuIcon{
+        width: 3rem;
+        height: 4rem;
+        right: 1rem;    
+    }
+
+    .closeIcon{
+        width: 3rem;
+        height: 4rem;
+        right: 1rem;
+    }
+
+    .mobileMenuContainer{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-top: 5rem;
+    }
+}
+
+@media screen and (min-width: 491px) and (max-width: 730px){
+    :root{
+    --fs-1:3rem;
+    --fs-2:1rem;
+    --fs-4: 1.2rem;
+    --fs-7: 7rem;
+    --fs-8: 2rem;
+    --fs-3: 1rem;
+    }
+    
+    .menuIcon{
+        width: 5rem;
+        height: 6rem;
+    }
+
+    .closeIcon{
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .mobileMenuContainer{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-top: 7rem;
+    }
+
+    .poemTitle{
+        font-size: 2.8rem;
+    }
+
+    .VoiceInterface{
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .y2kLine{
+        width: 25rem;
+
+    }
+}
+
+
+
+@media screen and (max-width: 1300px){
+    .searchEngine{
+        display: none;
+    }
+    .contactButton{
+        display: none;
+    }
+
+    .horizontalmenu{
+        display: none;
+    }
+
+    
+    
+}
+
+@media screen and (min-width: 1301px){
+    .menuIcon{
+        display: none;
+    }
+
+
+}
+
+
+@media screen and (min-width: 1441px){
+
+    .textSubheaderLogo{
+        letter-spacing: 7px;
+    }
+    
+}
+
+
+
+@media screen and (min-width: 1660px){
+    :root{
+        --fs-6: 16.5rem;    
+        --fs-11: 3rem;
+    }
+
+    
+}
+
+@media screen and (min-width: 1850px){
+    :root{
+        --fs-6: 20rem;
+        --fs-7: 13rem;
+        --fs-1: 5rem;
+        --fs-2: 2.5rem;
+        --fs-8: 3rem;
+        --fs-3: 2.5rem;
+        --fs-5: 2.5rem;
+        --fs-10: 3.9rem;
+        --fs-11: 2rem;
+    }
+
+    .textSubheaderLogo{
+        letter-spacing: 8px;
+    }
+
+    .searchEngine{
+        padding: 25px;
+        border-radius: 65px;
+    }
+
+    .contactButton{
+        padding: 28px;
+        padding-bottom: 13px;
+        border-radius: 60px;
+        border: 5px solid;
+    }
+}
+
+@media screen and (max-width: 985px){
+    .footerEntirelogo{
+        padding-left: 0;
+    }
+
+    .footerEntirelogo, .contactInfo{
+        justify-self: center;
+    }
+
+    .emojiFooter{
+        display: flex;
+        justify-self: center;
+        margin-top: 3rem;
+    }
+
+    .contactInfo{
+        align-items: center;
+        padding-right: 0;
+        margin-top: 3rem;
+    }
+    
+    .remainingInfo{
+        align-items: center;
+        padding-right: 0;
+    }
+
+    .contentPoem{
+        font-size: 1.1rem;
+    }
+    .together{
+        margin-left: 15rem;
+    }
+
+    .neverhappened{
+        margin-left: 9rem;
+        padding-top: 1rem !important;
+        padding-bottom: 2rem !important;
+    }
+
+
+}
+
+@media screen and (min-width: 615px) and (max-width: 900px){
+    .scrollDown{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 615px){
+    .scrollDown{
+        font-size: 1rem;
+    }
+
+    .child-Nav{
+        bottom: 1rem;
+    }
+
+    .footerLogo{
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .footerMainLogo{
+        font-size: 2.5rem;
+    }
+
+    .footerSubLogo{
+        font-size: 1rem;
+    }
+
+    .emojiFooter{
+        width: 25rem;
+        height: 8rem;
+    }
+
+    .contactInfo h3, .contactNum, .socials h3{
+        font-size: 1.5rem;
+    }
+
+    .squarebox{
+        width: 25rem;
+        height: 4rem;
+    }
+
+    .scribblestar{
+        height: 5rem;
+        width: 100%;
+    }
+    
+    .artgallerytitle{
+        font-size: 4rem;
+    }
+
+    .slide{
+        height: 20rem;
+    }
+
+    .containerImgForSides1, .containerImgForSides2{
+        height: 200px;
+        transform: translateY(0);
+    }
+
+
+
+    
+}
+
+@media screen and (max-width: 320px){
+    .scrollDown{
+        display: none;
+    }
+    
+}

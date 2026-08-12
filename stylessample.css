@@ -1,0 +1,191 @@
+@font-face {
+    font-family: 'Tan Summers';
+    src: url(Fonts/TAN-SUMMERS.otf);
+}
+
+@font-face {
+    font-family: 'Palatino';
+    src: url(Fonts/Palatino_Medium.otf);
+}
+
+@font-face{
+    font-family:'Tan Astoria';
+    src: url(Fonts/TAN-ASTORIA-Display.ttf);
+}
+
+@font-face {
+    font-family: 'Tan Variety';
+    src: url(Fonts/TAN-_VARIETY.otf);
+}
+
+:root{
+    --fs-1:3.7rem;
+    --fs-2:1.8rem;
+    --fs-3:1.7rem;
+    --fs-4:1.5rem;
+    --fs-5:2rem;
+    --fs-6:15rem;
+    --fs-7:9.5rem;
+    --fs-8: 2.5rem;
+}
+
+body{
+    margin: 0;
+}
+
+body{
+    background-color: grey;
+}
+
+.header{
+    background-color: #523d23; /*remove*/
+}
+
+.headerLogo{
+    width: var(--fs-7);
+    height: var(--fs-7);
+}
+
+.textHeaderLogo{
+    font-family: 'Tan Astoria';
+    font-size: var(--fs-1);
+    color: white;
+    margin: 0px;
+
+}
+
+
+.textSubheaderLogo{
+    font-family: 'Tan Variety';
+    color: white;
+    letter-spacing: 4px;
+    font-size: var(--fs-2);
+    margin: 0px;
+    margin-top:-7px;
+}
+
+.textLogos{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+
+.divHeaderLogos{
+    display: flex;
+    flex-direction: row;
+}
+
+.searchButton img{
+    width: var(--fs-8);
+    height: var(--fs-8);
+}
+
+.searchButton{
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.searchEngine{
+    position: absolute;
+    width: 35%;
+    padding: 15px;
+    background-color: white;
+    border-radius: 50px;
+    top:var(--fs-5);
+    right: var(--fs-6);
+}
+
+.searchInput{
+    font-family: 'Tan Summers';
+    font-size: var(--fs-3);
+    outline: none;
+    border: 0; 
+    width: 85%;
+}
+
+
+.searchInput::placeholder{
+    color: #523d23;
+}
+
+.search-alignment{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    gap: 3px;
+}
+
+.search-alignment input{
+    color: #523d23;
+ 
+}
+
+.resultsContainer{
+    display: flex;
+    flex-direction: column;
+    padding-left:0;
+    display: none;
+}
+
+.result-item{
+    font-family: 'Palatino';
+    font-size: var(--fs-4);
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    border-bottom: 1px solid #eee;
+    color: #523d23;
+}
+
+.result-item:hover{
+    color:#fff8bf;
+    background-color: #523d23;
+}
+
+@media screen and (max-width: 1300px){
+    .searchEngine{
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width: 1441px){
+
+    .textSubheaderLogo{
+        letter-spacing: 7px;
+    }
+    
+}
+
+
+
+@media screen and (min-width: 1660px){
+    :root{
+        --fs-6: 20rem;    
+    }
+    
+}
+
+@media screen and (min-width: 1850px){
+    :root{
+        --fs-6: 20rem;
+        --fs-7: 13rem;
+        --fs-1: 5rem;
+        --fs-2: 2.5rem;
+        --fs-8: 3rem;
+        --fs-3: 2.5rem;
+        --fs-5: 2.5rem;
+    }
+
+    .textSubheaderLogo{
+        letter-spacing: 8px;
+    }
+
+    .searchEngine{
+        padding: 25px;
+        border-radius: 65px;
+    }
+
+}

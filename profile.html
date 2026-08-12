@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+        <link rel="stylesheet" href="profile.css">
+        <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon">
+        <title>Author's Profile | Ian's Sweet Pen</title>
+    </head>
+
+    <header class="header">
+    <div class="divHeaderLogos">
+        <a href="index.html"><img src="Images/Logo.png" alt="Ian's Sweet Pen round logo" class="headerLogo"></a>
+        <div class="textLogos">
+            <a href="index.html"><h1 class="textHeaderLogo">Ian's Sweet Pen</h1></a>
+            <a href="index.html"><h4 class="textSubheaderLogo">Gian's Art & Literary Website</h4></a>
+        </div>
+         <a href="contact.html"><h5 class="contactButton">Contact</h5></a>
+        <img src="Images/menuicon.png" alt="menu icon" class="menuIcon" onclick="showSideBar()">
+        <img src="Images/close icon.png" alt="close icon" class="closeIcon" onclick="closeSideBar()">
+    </div>
+    </header>
+
+
+<body>
+
+    <div class="cursorface">
+    </div>
+
+    <div class="searchEngine">
+        <form onsubmit="submitEvent(event)">
+        <div class="search-alignment">
+            <button type="submit" class="searchButton"><img src="Images/Search icon.png" alt="submit button icon"></button>
+            <input type="search" name="search" class="searchInput" placeholder="Search anything..." oninput="filterItems()" autocomplete="off">
+        </div>
+        <ul class="resultsContainer">
+            <a href="index.html"><li class="result-item">Home</li></a>
+            <a href="about.html"><li class="result-item">About</li></a>
+            <a href="achievements.html"><li class="result-item">Achievements</li></a>
+            <a href="profile.html"><li class="result-item">Author's profile</li></a>
+            <a href="contact.html"><li class="result-item">Contact</li></a>
+            <a href="index.html#row1"><li class="result-item">Proditiophobia</li></a>
+            <a href="index.html#row2"><li class="result-item">Sister, Me too</li></a>
+            <a href="index.html#row3"><li class="result-item">Lotus Flower</li></a>
+            <a href="index.html#row4"><li class="result-item">Beleaguered in Love</li></a>
+            <a href="index.html#row5"><li class="result-item">One Million Stars: One Million Kilometers to Connect Us</li></a>
+            <a href="index.html#row6"><li class="result-item">When the Arduous Life Tries to Kill You</li></a>
+            <a href="index.html#row7"><li class="result-item">Twenty Years</li></a>
+            <a href="index.html#row8"><li class="result-item">They Will</li></a>
+            <a href="index.html#row9"><li class="result-item">The Unorthodox Barbie</li></a>
+            <a href="index.html#row10"><li class="result-item">Dear Human,</li></a>
+           <a href="index.html#row11"> <li class="result-item">Dear little Gian,</li></a>
+            <a href="index.html#rowart"><li class="result-item">Art Gallery</li></a>
+        </ul>
+        </form>
+    </div>
+
+    
+    <nav class="navbarlarge">
+        <div class="horizontalmenu">
+        <ul>
+            <li class="menu"><a href="index.html">Home</a></li>
+            <li class="menu"><a href="about.html">About</a></li>
+            <li class="menu"><a href="achievements.html">Achievements</a></li>
+            <li class="currentmenu">Author's profile</li>
+        </ul>
+	    </div>
+    </nav>
+    <div class="container-fluid" style="background-color: #523d23;">
+        <div class="row rowbackground1">
+            <div class="col-12 col-lg-7 rowintro">
+                <h3 class="hello">Hello, I am</h3>
+                <h1 class="name">Gian Delos Reyes</h1>
+                <h4 class="andIam">And I am a <span class="typewriterRole"></span></h4>
+                <p class="aboutmyself">
+                    A 20-year old who loves to write and <br>
+                    express his thoughts about life. 
+                </p>
+                <br>
+                <div class="personalsocials">
+                    <a href="https://www.facebook.com/gian.delosreyes.10" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/iandelreye/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/giancarldelosreyes11-bit" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>  
+            <div class="col-12 col-lg-5 rowintro2">
+                <div class="picwithsmiley">
+                    <img src="Images/maphoto.png" alt="my self photo with mask" class="myphoto">
+                    <div class="smileytohide">
+                        <img src="Images/emojihappy.png" alt="smiley sticker" class="smileyface draggable" draggable="false">
+                    </div> 
+                </div>
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 titlerowy2k">
+                <img src="Images/profiley2k.png" alt="y2k art" class="profiley2kleft">
+                <h3 class="mypassions">MY PASSIONS</h3>
+                <img src="Images/profiley2k.png" alt="y2k art" class="profiley2kright">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-4 leftPassion" style="background-color: #523d23; padding: 2rem 1rem;">
+                <div class="passioncard">
+                    <img src="Images/writing.png" alt="leaf for writing" class="imagespassion">
+                    
+                    <h3 class="passiontitles">Writing</h3>
+                    <br>
+                    <p class="passioncontext">I write stories <br>
+                        that reflects my <br> 
+                        thoughts</p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4"  style="background-color: #523d23; padding: 2rem 1rem;">
+                <div class="passioncard">
+                    <img src="Images/baking.png" alt="cinnamon rolls" class="imagespassion">
+                    
+                    <h3 class="passiontitles">Baking</h3>
+                    <br>
+                    <p class="passioncontext">I bake cakes, <br>
+                        breads, cookies, <br>
+                        and bars</p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 rightPassion"  style="background-color: #523d23; padding: 2rem 1rem;">
+                <div class="passioncard">
+                    <img src="Images/painting.png" alt="painting tub" class="imagespassion">
+                    
+                    <h3 class="passiontitles">Painting</h3>
+                    <br>
+                    <p class="passioncontext">I paint at my <br> 
+                        spare time to <br>
+                         keep me alive</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="background-color: #ffface; margin: 0; width: 97%; display: flex; justify-self: center;">  
+            <div class="col-12 col-lg-5">
+                <h3  style="margin: 0;">
+                    <img src="Images/lanyard-photo.png" alt="id card with photo of me" class="landyard">
+                </h3>
+            </div>
+            <div class="col-12 col-lg-7">
+                <div class="progpassion">
+                    <h3 class="iamalsointo">
+                        I am also into
+                    </h3>
+                    <h1 class="programming">
+                        Programming
+                    </h1>
+
+                    <h3 class="focuson">
+                        focus on web development
+                    </h3>
+                    <br>
+                    <br>
+                    <h3 class="techstack">&lt;/My TechStack&gt;</h3>    
+                </div>
+
+                <div class="carousel-wrapper">
+                    <div class="carousel">
+                        <div class="group">
+                            <div class="card"><img src="Images/html.png" alt="HTML LOGO" class="proglogo"></div>
+                            <div class="card"><img src="Images/css.png" alt="CSS LOGO" class="proglogo"></div>
+                            <div class="card"><img src="Images/javascript.png" alt="JAVASCRIPT LOGO" class="proglogo"></div>
+                            <div class="card"><img src="Images/php.png" alt="PHP LOGO" class="proglogo"></div>
+                            <div class="card"><img src="Images/bootstrap.png" alt="BOOTSTRAP LOGO" class="proglogo"></div>
+                            <div class="card"><img src="Images/java.png" alt="JAVA LOGO" class="proglogo"></div>
+                        </div>
+                        <div aria-hidden class="group">
+                            <div class="card"><img src="Images/html.png" alt="HTML LOGO" class="proglogo"></div>
+                            <div class="card"><img src="Images/css.png" alt="CSS LOGO" class="proglogo"></div>
+                            <div class="card"><img src="Images/javascript.png" alt="JAVASCRIPT LOGO" class="proglogo"></div>
+                            <div class="card"><img src="Images/php.png" alt="PHP LOGO" class="proglogo"></div>
+                            <div class="card"><img src="Images/bootstrap.png" alt="BOOTSTRAP LOGO" class="proglogo"></div>
+                            <div class="card"><img src="Images/java.png" alt="JAVA LOGO" class="proglogo"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row rowlast">
+            <div class="col-12 col-lg-5 puzzlecontainer">  
+                <div class="imagesfordrag">
+                    <img src="Images/p1.png" alt="puzzle pieces" class="draggable puzpieces1" draggable="false">
+                    <img src="Images/p2.png" alt="puzzle pieces" class="draggable puzpieces2" draggable="false">
+                    <img src="Images/p3.png" alt="puzzle pieces" class="draggable puzpieces3" draggable="false">
+                    <img src="Images/p4.png" alt="puzzle pieces" class="draggable puzpieces4" draggable="false">
+                </div>
+            </div>
+            <div class="col-12 col-lg-7">
+                <div class="whyian">
+                    <h1 class="whybuild">Why build Ian’s <span class="sweet">Sweet</span> 
+                         <br> <span class="pen">Pen?</span></h1>
+                    <br>
+                    <p class="whycontext">It was my dream to create my own publication,<br>
+                        something where I can express my works freely <br> 
+                        and bring more awareness about issues on <br>
+                        humanity.</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+   
+
+    <ul class="mobileMenuContainer">
+        <a href="index.html" style="text-decoration: none;"><li class="mobileMenu">Home</li></a>
+        <a href="about.html" style="text-decoration: none;"><li class="mobileMenu">About</li></a>
+        <a href="achievements.html" style="text-decoration: none;"><li class="mobileMenu">Achievements</li></a>
+        <li class="currentmobilemenu">Author's profile</li>
+        <a href="contact.html" style="text-decoration: none;"><li class="mobileMenu">Contact</li></a>
+        <div class="searchEngineMobile">
+        <form onsubmit="submitMobileEvent(event)">
+        <div class="search-alignment">
+            <button type="submit" class="searchButton"><img src="Images/Search icon.png" alt="submit button icon"></button>
+            <input type="search" name="search" class="searchInput" id="searchInputMobile" placeholder="Search anything..." oninput="filterItemsMobile()" autocomplete="off">
+        </div>
+        <ul class="resultsContainer" id="resultsContainerMobile">
+            <a href="index.html"><li class="result-itemMobile">Home</li></a>
+            <a href="about.html"><li class="result-itemMobile">About</li></a>
+            <a href="achievements.html"><li class="result-itemMobile">Achievements</li></a>
+            <a href="profile.html"><li class="result-itemMobile">Author's profile</li></a>
+            <a href="contact.html"><li class="result-itemMobile">Contact</li></a>
+            <a href="index.html#row1"><li class="result-itemMobile">Proditiophobia</li></a>
+            <a href="index.html#row2"><li class="result-itemMobile">Sister, Me too</li></a>
+            <a href="index.html#row3"><li class="result-itemMobile">Lotus Flower</li></a>
+            <a href="index.html#row4"><li class="result-itemMobile">Beleaguered in Love</li></a>
+            <a href="index.html#row5"><li class="result-itemMobile">One Million Stars: One Million Kilometers to Connect Us</li></a>
+            <a href="index.html#row6"><li class="result-itemMobile">When the Arduous Life Tries to Kill You</li></a>
+            <a href="index.html#row7"><li class="result-itemMobile">Twenty Years</li></a>
+            <a href="index.html#row8"><li class="result-itemMobile">They Will</li></a>
+            <a href="index.html#row9"><li class="result-itemMobile">The Unorthodox Barbie</li></a>
+            <a href="index.html#row10"><li class="result-itemMobile">Dear Human,</li></a>
+           <a href="index.html#row11"> <li class="result-itemMobile">Dear little Gian,</li></a>
+            <a href="index.html#rowart"><li class="result-itemMobile">Art Gallery</li></a>
+        </ul>
+        </form>
+    </ul>
+</body>
+
+<footer>
+    <div class="container-fluid">
+        <div class="row rowLogo" style="background-color: #523d23;">
+            <div class="col-12 col-lg-6" style="margin-top: 2rem;">
+                <div class="footerEntirelogo">
+                    <a href="index.html"><img src="Images/Logo.png" class="footerLogo" alt="ian's sweet pen logo"></a>
+                    <div class="footerSubLogo">
+                        <a href="index.html"><h1 class="footerMainLogo">Ian's Sweet Pen</h1></a>
+                        <a href="index.html"><h4 class="footersublogo">Gian's Art & Literary Website</h4></a>
+                    </div> 
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="contactInfo">
+                    <h3 style="font-size: 2rem; color: #fff8bf;">Contact Us</h3>
+                    <h3>giancarl.delosreyes11@gmail.com</h3>
+                    <h3>Baguio City, Philippines</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row rowLogo2">
+            <div class="col-12 col-lg-6 order-2 order-lg-1" style="background-color: #523d23; padding-bottom: 3rem;">
+                <img src="Images/emojifooter.png" class="emojiFooter" alt="emoji cute animals">
+            </div>
+             <div class="col-12 col-lg-6 order-1 order-lg-2" style="background-color: #523d23;">
+                <div class="remainingInfo">
+                    <h3 class="contactNum">+63 991 110 3894</h3>
+                    <div class="socials">
+                         <a href="https://www.instagram.com/gian_delos_reyes_17/" target="_blank"><h3>Instagram | </h3></a>
+                        <a href="https://x.com/Eduvise_Ian?" target="_blank"><h3 style="padding-left: 5px;">Twitter</h3></a>
+                    </div>
+                </div>
+  
+             </div>
+        </div>
+    </div>
+</footer>
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+</script>
+<script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+<script>
+
+    function delay(ms){
+        return new Promise((thatPromise)=>setTimeout(thatPromise,ms));
+    };
+
+    const smiley = document.querySelector('.smileyface');
+
+    smiley.addEventListener("mouseenter",()=>{
+        smiley.style.cursor = "url('Images/somethang.png'),auto";
+
+        delay(3000).then(()=>{
+            smiley.style.cursor = "url('Images/Dragme.png'),auto";
+            delay(3000).then(()=>{
+                smiley.style.cursor = "url('Images/somethang.png'),auto";
+            });
+        });
+
+        
+        
+    });
+
+    const allItemsCursor = document.querySelectorAll('.hello,.name,.andIam,.typewriterRole,.aboutmyself');
+    const giancursor = document.querySelector('.cursorface');
+
+    allItemsCursor.forEach((item)=>{
+
+        item.addEventListener("mouseenter",()=>{
+            giancursor.classList.add("active");
+        });
+
+        item.addEventListener("mousemove",(e)=>{
+            giancursor.style.left = e.clientX +"px";
+            giancursor.style.top = e.clientY +"px";
+        });
+
+        item.addEventListener("mouseleave",()=>{
+            giancursor.classList.remove("active");
+        });
+
+
+
+    });
+
+
+    var type = new Typed(".typewriterRole",{
+        strings: ["Literary Enthusiast",
+        "Youth Writer Poet",
+        "Home Baker",
+        "Youth Artist",
+        "Programmer",
+        "Computer Science Student",
+        "Web Developer"
+        ],
+        typeSpeed: 80,
+        backSpeed: 80,
+        loop: true
+    })
+    
+
+   const draggableItems = document.querySelectorAll('.smileyface,.puzpieces1,.puzpieces2,.puzpieces3,.puzpieces4');
+
+   draggableItems.forEach((item,index)=>{
+    
+    item.addEventListener("pointerdown",(eventObj)=>{
+        let offsetX, offsetY;
+
+        offsetX = eventObj.clientX - item.offsetLeft;
+        offsetY = eventObj.clientY - item.offsetTop;
+
+        const move = (e)=>{
+            item.style.left = (e.clientX - offsetX) + "px";
+            item.style.top = (e.clientY - offsetY) + "px";
+            if(index!=0){
+                item.style.cursor = "url('Images/grabcursor.png'),auto";
+            }
+        }
+
+        const release = ()=>{
+            document.removeEventListener("pointermove",move);
+            document.removeEventListener("pointerup",release);
+        }
+
+        document.addEventListener("pointermove",move);
+        document.addEventListener("pointerup",release);
+    });
+   });
+
+
+     function filterItems(){
+        const input = document.querySelector('.searchInput').value.toLowerCase();
+        const resultsContainer = document.querySelector('.resultsContainer');
+        const items = resultsContainer.querySelectorAll('.result-item');
+
+        if(input){
+            resultsContainer.style.display = 'flex';
+                items.forEach(item => {
+                    const text = item.textContent.toLowerCase();
+
+                    if(text.includes(input)){
+                        item.style.display = 'flex';
+                    }else{
+                        item.style.display = 'none';
+                    }
+            });
+        }else{
+            resultsContainer.style.display = 'none';
+        }
+
+    }
+
+    function filterItemsMobile(){
+        const input = document.getElementById('searchInputMobile').value.toLowerCase();
+        const resultsContainer = document.getElementById('resultsContainerMobile');
+        const items = resultsContainer.querySelectorAll('.result-itemMobile');
+
+        if(input){
+            resultsContainer.style.display = 'flex';
+                items.forEach(item => {
+                    const text = item.textContent.toLowerCase();
+
+                    if(text.includes(input)){
+                        item.style.display = 'flex';
+                    }else{
+                        item.style.display = 'none';
+                    }
+            });
+        }else{
+            resultsContainer.style.display = 'none';
+        }
+    }
+
+     function submitEvent(event){
+        event.preventDefault();
+
+        const searchInput = document.querySelector('.searchInput');
+        const query = searchInput.value.trim().toLowerCase();
+
+        console.log(query);
+
+        if(query){
+           if(query == "home"){
+                window.location.href = 'index.html';
+            }else if( query == "about"){
+                window.location.href = 'about.html';
+            }else if( query == "achievements"){
+                window.location.href = 'achievements.html';
+            }else if( query == "profile" || query=="author's profile"){
+                window.location.href = 'profile.html';
+            }else if( query == "contact"){
+                window.location.href = 'contact.html';
+            }else if( query == "proditiophobia"){
+                window.location.href = '#row1';
+            }else if( query == "sister,me too"){
+                window.location.href = '#row2';
+            }else if( query == "lotus flower"){
+                window.location.href = '#row3';
+            }else if( query == "beleaguered in love"){
+                window.location.href = '#row4';
+            }else if( query == "one million stars: one million kilometers to connect us"){
+                window.location.href = '#row5';
+            }else if( query == "when the arduous life tries to kill you"){
+                window.location.href = '#row6';
+            }else if( query == "twenty years"){
+                window.location.href = '#row7';
+            }else if( query == "they will"){
+                window.location.href = '#row8';
+            }else if( query == "the unorthodox barbie"){
+                window.location.href = '#row9';
+            }else if( query == "dear human,"){
+                window.location.href = '#row10';
+            }else if( query == "dear little gian,"){
+                window.location.href = '#row11';
+            }else if( query == "art gallery"){
+                window.location.href = '#rowart';
+            }else{
+                alert('Sorry, no matching content found for '+query);
+            }
+        }
+    }
+
+    function submitMobileEvent(event){
+        event.preventDefault();
+
+        const searchInput = document.getElementById('searchInputMobile');
+        const query = searchInput.value.trim().toLowerCase();
+
+        console.log(query);
+
+        if(query){
+            if(query === "home"){
+                window.location.href = 'index.html';
+            }else{
+                alert('Sorry, no matching content found for '+query);
+            }
+        }
+    }
+
+
+    function showSideBar() {
+        const closeIcon = document.querySelector('.closeIcon'); 
+        const menuIcon = document.querySelector('.menuIcon');
+        const menuContainer = document.querySelector('.mobileMenuContainer');
+
+        menuContainer.style.display = 'block';
+        menuIcon.style.display = 'none';
+        closeIcon.style.display = 'flex';
+    }
+
+
+    function closeSideBar() {
+        const closeIcon = document.querySelector('.closeIcon'); 
+        const menuIcon = document.querySelector('.menuIcon');
+        const menuContainer = document.querySelector('.mobileMenuContainer');
+
+        menuContainer.style.display = 'none';
+        menuIcon.style.display = 'flex';
+        closeIcon.style.display = 'none';
+    }
+
+    const viewport = window.matchMedia("(max-width: 1300px)");
+    viewport.addEventListener('change',changeViewport);
+
+    changeViewport(viewport);
+
+    function changeViewport(mq){
+        const closeIcon = document.querySelector('.closeIcon'); 
+        const menuIcon = document.querySelector('.menuIcon');
+        const menuContainer = document.querySelector('.mobileMenuContainer');
+
+        if(mq.matches){
+            menuContainer.style.display = 'none';
+            menuIcon.style.display = 'flex';
+            closeIcon.style.display = 'none';
+        }else{
+            menuContainer.style.display = 'none';
+            menuIcon.style.display = 'none';
+            closeIcon.style.display = 'none';
+        }
+    }
+</script>

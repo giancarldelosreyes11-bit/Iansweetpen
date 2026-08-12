@@ -1,0 +1,942 @@
+@font-face {
+    font-family: 'Tan Summers';
+    src: url(Fonts/TAN-SUMMERS.otf);
+}
+
+@font-face {
+    font-family: 'Palatino';
+    src: url(Fonts/Palatino_Medium.otf);
+}
+
+@font-face{
+    font-family:'Tan Astoria';
+    src: url(Fonts/TAN-ASTORIA-Display.ttf);
+}
+
+@font-face {
+    font-family: 'Tan Variety';
+    src: url(Fonts/TAN-_VARIETY.otf);
+}
+
+@font-face {
+    font-family: 'Times New Roman';
+    src: url(Fonts/Tinos-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Comic Sans';
+    src: url(Fonts/Ldfcomicsanslight-6dZo.ttf);
+}
+
+@font-face {
+ font-family: 'WF Visual Sans';
+ src: url('https://dhygzobemt712.cloudfront.net/Fonts/VF/WFVisualSansVF.woff2') format('woff2');
+ font-weight: 100 900;
+ font-style: normal;
+ font-display: swap;
+}
+
+*{
+    cursor: url("Images/pointercursor.png"),auto;
+}
+
+:root{
+    --fs-1:3.7rem;
+    --fs-2:1.8rem;
+    --fs-3:1.7rem;
+    --fs-4:1.5rem;
+    --fs-5:2rem;
+    --fs-6:16rem;
+    --fs-7:9.5rem;
+    --fs-8: 2.5rem;
+    --fs-10: 3rem;
+    --fs-11: 2.5rem;
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+.header{
+    background-color: #523d23;
+}
+
+.headerLogo{
+    width: var(--fs-7);
+    height: var(--fs-7);
+    cursor: url("Images/linkcursor.png"),auto;
+}
+
+.textHeaderLogo{
+    font-family: 'Tan Astoria';
+    font-size: var(--fs-1);
+    color: white;
+    margin: 0px;
+    cursor: url("Images/linkcursor.png"),auto;
+
+}
+
+
+.textSubheaderLogo{
+    font-family: 'Tan Variety';
+    color: white;
+    letter-spacing: 4px;
+    font-size: var(--fs-2);
+    margin: 0px;
+    margin-top:-7px;
+    cursor: url("Images/linkcursor.png"),auto;
+}
+
+.textLogos{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+
+.divHeaderLogos{
+    display: flex;
+    flex-direction: row;
+}
+
+.divHeaderLogos a{
+    text-decoration: none;
+    color: white;
+}
+
+.searchButton img{
+    width: var(--fs-8);
+    height: var(--fs-8);
+    cursor: url("Images/linkcursor.png"),auto;
+}
+
+.searchButton{
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.searchEngine{
+    position: absolute;
+    width: 35%;
+    padding: 15px;
+    background-color: white;
+    border-radius: 50px;
+    top:var(--fs-5);
+    right: var(--fs-6);
+    z-index: 2;
+}
+
+.searchEngineMobile{
+    width: 90%;
+    padding: 15px;
+    background-color: white;
+    border-radius: 50px;
+    margin: 20px 0;
+}
+
+.searchInput{
+    font-family: 'Tan Summers';
+    font-size: var(--fs-3);
+    outline: none;
+    border: 0; 
+    width: 85%;
+    cursor: url("Images/linkcursor.png"),auto;
+}
+
+
+.searchInput::placeholder{
+    color: #523d23;
+}
+
+.search-alignment{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    gap: 3px;
+}
+
+.search-alignment input{
+    color: #523d23;
+ 
+}
+
+.resultsContainer{
+    display: flex;
+    flex-direction: column;
+    padding-left:0;
+    display: none;
+}
+
+.result-item{
+    font-family: 'Palatino';
+    font-size: var(--fs-4);
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    border-bottom: 1px solid #eee;
+    color: #523d23;
+}
+
+.result-itemMobile{
+    font-family: 'Palatino';
+    font-size: var(--fs-4);
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    border-bottom: 1px solid #eee;
+    color: #523d23;
+}
+
+
+.result-item:hover{
+    color:#fff8bf;
+    background-color: #523d23;
+    cursor: url("Images/linkcursor.png"),auto;
+}
+
+.result-itemMobile:hover{
+    color:#fff8bf;
+    background-color: #523d23;
+    cursor: url("Images/linkcursor.png"),auto;
+}
+
+.contactButton{
+    position: absolute;
+    font-family: 'Tan Astoria';
+    top: var(--fs-5);
+    right: var(--fs-11);
+    color: #fff8bf;
+    font-size: var(--fs-10);
+    border: 3px solid white;
+    line-height: 1;
+    border-radius: 45px;
+    padding: 20px;
+    padding-bottom: 5px;
+    background-image: url(Images/contact\ hover.gif);
+    background-size: cover;
+    text-shadow: 2px 2px 20px black;
+    background-repeat: no-repeat;
+}
+
+
+.contactButton:hover{
+    background-size: cover;
+    background-image: url(Images/contact\ hover.gif);
+    background-repeat: no-repeat;
+    color: #fff8bf;
+    border-color: #fff8bf;  
+    transform: scale(1.1);
+    transition-duration: 2s; 
+    text-shadow: 2px 2px 20px black;
+    cursor: url("Images/linkcursor.png"),auto;
+}
+
+.mobileMenuContainer{
+    background-color: rgba(250, 255, 183, 0.63);
+    backdrop-filter: blur(10px);
+    padding: 1.5rem 0;
+    padding-left: 10rem;
+    padding-right: 13rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    position: absolute;
+    width: 100%;
+    animation: slide-down 1s ease-out;
+    position: absolute;
+    z-index: 1;
+    top:0;
+    margin-top: 9rem;
+}
+
+@keyframes slide-down {
+      0% { opacity: 0; transform: translateY(-10%); z-index: -1;}   
+      25% {z-index: -1;}
+      50%{z-index:-1;}
+    100% { opacity: 1; transform: translateY(0);}
+}
+
+
+.mobileMenu{
+    font-weight: 1000;
+    font-size: var(--fs-2);
+    font-family: 'Tan Summers';
+    list-style: none;
+    color: #523d23;
+    padding: 7px 0;
+    padding-left: 2rem;
+    line-height: 1.5;
+    border-radius: 10px;
+}
+
+.menuIcon{
+    width: 8rem;
+    height: 10rem;
+    position: absolute;
+    right: 2rem;
+    display: flex;
+    align-self: center;
+    cursor: url("Images/linkcursor.png"),auto;
+}
+
+
+/*might not work later because a tag is not in place after the class*/
+.mobileMenu:hover{
+    background-color: #523d23;
+    color: #fff8bf;
+    cursor: url("Images/linkcursor.png"),auto;
+}
+
+.currentmobilemenu{
+    font-weight: 1000;
+    font-size: var(--fs-2);
+    font-family: 'Tan Summers';
+    list-style: none;
+    background-color: #523d23;
+    color: #fff8bf;
+    padding: 7px 0;
+    padding-left: 2rem;
+    line-height: 1.5;
+    border-radius: 10px;
+}
+
+.closeIcon{
+    position: absolute;
+    width: 8rem;
+    height: 8rem;
+    right: 2rem;
+    display: flex;
+    align-self: center;
+    display: none;
+    cursor: url("Images/linkcursor.png"),auto;
+}
+
+.footerLogo{
+    width: 13rem;
+    cursor: url("Images/linkcursor.png"),auto;
+}
+
+.footerEntirelogo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 2rem;
+}
+
+.footerSubLogo{
+    display: flex;
+    flex-direction: column;
+}
+
+.footerMainLogo{
+    font-family: 'Tan Astoria';
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: white;
+    cursor: url("Images/linkcursor.png"),auto;
+}
+
+.footersublogo{
+    font-family: 'Tan Variety';
+    margin-top: 0;
+    letter-spacing: 0.25rem;
+    font-weight: 600;
+    color: white;
+    cursor: url("Images/linkcursor.png"),auto;
+}
+
+.footerSubLogo a{
+    text-decoration: none;
+}
+
+.contactInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 3px;
+    padding-right: 2rem;
+    margin-top: 5rem;
+}
+
+.contactInfo h3{
+    font-family: 'Tan Summers';
+    font-weight: 600;
+    color: white;
+    font-size: 1.7rem;
+    
+}
+
+.emojiFooter{
+    width: 37rem;
+    padding-left: 2rem;
+}
+
+.socials{
+    display: flex;
+    flex-direction: row;
+}
+
+.socials a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Tan Summers';
+}
+
+.socials a h3{
+    font-size: 1.7rem;
+    font-weight: 600;
+    cursor: url("Images/linkcursor.png"),auto;
+}
+
+.contactNum{
+    font-size: 1.7rem;
+    font-family: 'Tan Summers';
+    color: white;
+    font-weight: 600;
+}
+
+.remainingInfo{
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 5rem;
+}
+
+
+
+.horizontalmenu ul{
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+}
+
+.horizontalmenu{
+    background-color: #523d23;
+}
+
+.currentmenu{
+    font-size: var(--fs-2) ;
+    color: #fff8bf;
+    font-family: 'Tan Summers';
+    font-weight: 600;
+    padding: 7px 10px;
+    background-color: #7d5d1e;
+}
+
+
+
+.menu{
+    padding: 7px 10px;
+    position: relative;
+}
+
+.menu::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    bottom: 0;
+    height: 4px;
+    left: 50%;
+    background-color: #fff8bf;
+    transition: all 0.5s;
+}
+
+.menu:hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+
+.menu a:hover{
+    color: #fff96a;
+    cursor: url("Images/linkcursor.png"),auto;
+}
+
+.menu:hover::before{
+    width: 100%;
+    left:0;
+}
+
+.menu a{
+    font-size: var(--fs-2);
+    font-weight: 600;
+    font-family: 'Tan Summers';
+    text-decoration: none;
+    color: #fff8bf;
+}
+
+.resultsContainer a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.resultsContainerMobile a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.getin{
+    font-family: 'WF Visual Sans';
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff8bf;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.contactmetitle{
+    font-family: 'WF Visual Sans';
+    color: #fff8bf;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.talkcontacts{
+    width: fit-content;
+    justify-self: end;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    animation: fromLeft 0.8s linear;
+}
+
+.talk, .write{
+    font-family: 'WF Visual Sans';
+    font-size: 1.5rem;
+    color: #fff8bf;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.mycard{
+    background-color: transparent ;
+    border: 4px solid #fff8bf ;
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 15px ;
+}
+
+.email, .phoneNum, .messenger{
+    text-align: center;
+    font-family: 'WF Visual Sans';
+    color: #fff8bf;
+    line-height: 2rem;
+    padding-top: 0.5rem;
+
+}
+
+
+.fa-solid, .fa-brands{
+    font-size: 2.6rem;
+    color: #fff8bf;
+}
+
+.mycard:hover{
+    background: linear-gradient(
+         340deg,
+        #fff8bf 10%,
+        #fff8bf 40%,
+        #fff8bf 60%,
+        white 75%,
+        #fff8bf 100%
+    ); 
+
+    background-size: 300% 100%;
+}
+
+.messagecontainer{
+    padding-top: 2rem;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    animation: fromRight 0.8s linear;
+}
+
+.write{
+    padding-bottom: 0.5rem;
+}
+
+.inputcont{
+    width: 100%;
+    padding: 1.5rem;    
+    border-radius: 10px;
+    border: 3px solid #fff8bf;
+    background-color: transparent;    
+    color: #fff8bf;
+    cursor: url("Images/linkcursor.png"),auto;    
+}
+
+.inputcontainers{
+    position: relative;
+}
+
+
+textarea{
+    width: 100%;
+    height: 10rem;
+    padding: 1rem;  
+    padding-top: 1.5rem;  
+    border-radius: 10px;
+    border: 3px solid #fff8bf;
+    background-color: transparent;
+    color: #fff8bf;
+    cursor: url("Images/linkcursor.png"),auto;
+}
+
+.inputcont:focus, textarea:focus{
+    outline: 3px solid #fff8bf; 
+}
+
+.inputcont::placeholder, textarea::placeholder{
+    font-family: 'WF Visual Sans';
+    color: #fff8bf;
+}
+
+
+.sendMes{
+    background-color: #fff8bf;
+    border: none;
+    border-radius: 15px;
+    padding: 1.3rem;
+    font-family: 'WF Visual Sans';
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+}
+
+.textTitle{
+    background-color: #523d23;
+    color: #fff8bf;
+    padding: 0 0.5rem;
+    font-family: 'WF Visual Sans';
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    transform: translateY(-30%);
+
+}
+
+.sendMes:hover{
+    color: #fff8bf;
+    cursor: url("Images/linkcursor.png"),auto !important;
+}
+
+.sendMes:hover::before{
+    content: '';
+    background: conic-gradient(
+         from var(--angle),
+        red 10%,
+        orange 40%,
+        purple 90%
+    );
+    inset: -5px;
+    position: absolute;
+    border-radius: inherit;
+    filter: blur(8px);
+    z-index: -1;
+    animation: spin 2s linear infinite;
+}
+
+.sendMes:hover::after{
+    content: '';
+    background-color: #523d23;
+    border-radius: inherit;
+    border: 2px solid #fff8bf;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes spin {
+    from{
+        --angle: 0deg;
+    }to{
+        --angle: 360deg;
+    }    
+}
+
+@keyframes glow{
+    from{
+        background-position: 100% 0;
+    }to{
+        background-position: 0% 0;
+    }
+}
+
+@keyframes fromLeft {
+    from{
+        transform: translateX(-20%);
+        opacity: 0;
+    }to{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes fromRight {
+    from{
+        transform: translateX(20%);
+        opacity: 0;
+    }to{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 375px){
+    :root{
+    --fs-1: 1.7rem;
+    --fs-2: 0.8rem;
+    --fs-4: 1rem;
+    --fs-7: 5.5rem;
+    --fs-8: 1.5rem;
+    --fs-3: 0.9rem;
+    }
+
+    .menuIcon{
+        position: relative;
+        width: 3rem;
+        height: 4rem;
+        transform: translateX(1.5rem);
+    }
+
+    .closeIcon{
+        position: relative;
+        width: 3rem;
+        height: 4rem;
+        transform: translateX(1.5rem);
+    }
+
+    .mobileMenuContainer{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-top: 4.9rem;
+    }
+    
+    
+
+}
+
+
+@media screen and (min-width: 376px) and (max-width: 490px){
+    :root{
+    --fs-1:2.3rem;
+    --fs-2:0.7rem;
+    --fs-4: 1rem;
+    --fs-7: 5.5rem;
+    --fs-8: 1.7rem;
+    --fs-3: 0.9rem;
+    }
+
+    .menuIcon{
+        width: 3rem;
+        height: 4rem;
+        right: 1rem;    
+    }
+
+    .closeIcon{
+        width: 3rem;
+        height: 4rem;
+        right: 1rem;
+    }
+
+    .mobileMenuContainer{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-top: 5rem;
+    }
+}
+
+@media screen and (min-width: 491px) and (max-width: 730px){
+    :root{
+    --fs-1:3rem;
+    --fs-2:1rem;
+    --fs-4: 1.2rem;
+    --fs-7: 7rem;
+    --fs-8: 2rem;
+    --fs-3: 1rem;
+    }
+    
+    .menuIcon{
+        width: 5rem;
+        height: 6rem;
+    }
+
+    .closeIcon{
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .mobileMenuContainer{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-top: 7rem;
+    }
+
+    
+}
+
+
+
+@media screen and (max-width: 1300px){
+    .searchEngine{
+        display: none;
+    }
+    .contactButton{
+        display: none;
+    }
+
+    .horizontalmenu{
+        display: none;
+    }
+
+    
+    
+}
+
+@media screen and (min-width: 1301px){
+    .menuIcon{
+        display: none;
+    }
+
+
+}
+
+
+@media screen and (min-width: 1441px){
+
+    .textSubheaderLogo{
+        letter-spacing: 7px;
+    }
+    
+}
+
+
+
+@media screen and (min-width: 1660px){
+    :root{
+        --fs-6: 16.5rem;    
+        --fs-11: 3rem;
+    }
+
+    
+}
+
+@media screen and (min-width: 1850px){
+    :root{
+        --fs-6: 20rem;
+        --fs-7: 13rem;
+        --fs-1: 5rem;
+        --fs-2: 2.5rem;
+        --fs-8: 3rem;
+        --fs-3: 2.5rem;
+        --fs-5: 2.5rem;
+        --fs-10: 3.9rem;
+        --fs-11: 2rem;
+    }
+
+    .textSubheaderLogo{
+        letter-spacing: 8px;
+    }
+
+    .searchEngine{
+        padding: 25px;
+        border-radius: 65px;
+    }
+
+    .contactButton{
+        padding: 28px;
+        padding-bottom: 13px;
+        border-radius: 60px;
+        border: 5px solid;
+    }
+}
+
+@media screen and (max-width: 985px){
+    .footerEntirelogo{
+        padding-left: 0;
+    }
+
+    .footerEntirelogo, .contactInfo{
+        justify-self: center;
+    }
+
+    .emojiFooter{
+        display: flex;
+        justify-self: center;
+        margin-top: 3rem;
+    }
+
+    .contactInfo{
+        align-items: center;
+        padding-right: 0;
+        margin-top: 3rem;
+    }
+    
+    .remainingInfo{
+        align-items: center;
+        padding-right: 0;
+    }
+
+    .talkcontacts, .messagecontainer{
+        justify-self: center;
+    }
+
+    
+
+    
+
+}
+
+@media screen and (max-width: 615px){
+    .scrollDown{
+        font-size: 1rem;
+    }
+
+    .child-Nav{
+        bottom: 1rem;
+    }
+
+    .footerLogo{
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .footerMainLogo{
+        font-size: 2.5rem;
+    }
+
+    .footerSubLogo{
+        font-size: 1rem;
+    }
+
+    .emojiFooter{
+        width: 25rem;
+        height: 8rem;
+    }
+
+    .contactInfo h3, .contactNum, .socials h3{
+        font-size: 1.5rem;
+    }
+
+    
+}
+    
